@@ -11,7 +11,6 @@ import upper_cloud from '../assets/images/upperCloud.png'
 
 
 export default function Hero() {
-    let darkSky = document.querySelector("#darkSky") as HTMLImageElement;
     let stars = document.querySelector("#stars") as HTMLImageElement;
     let moon = document.querySelector("#whiteMoon") as HTMLImageElement;
     let meteor = document.querySelector("#meteor") as HTMLImageElement;
