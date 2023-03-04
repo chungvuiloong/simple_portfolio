@@ -8,29 +8,18 @@ import sea from '../assets/images/seaNoMountains.png'
 import front_island from '../assets/images/frontIsland.png'
 import bottom_cloud from '../assets/images/bottomCloud.png'
 import upper_cloud from '../assets/images/upperCloud.png'
+import React, { useState, useEffect } from 'react';
 
 
 export default function Hero() {
-    let stars = document.querySelector("#stars") as HTMLImageElement;
-    let moon = document.querySelector("#whiteMoon") as HTMLImageElement;
-    let meteor = document.querySelector("#meteor") as HTMLImageElement;
-    let backMountains = document.querySelector("#backMountains") as HTMLImageElement;
-    let bottomCloud = document.querySelector("#bottomCloud") as HTMLImageElement;
 
-    window.addEventListener("scroll", () => {
-        let yPosition = window.scrollY;
+    const [scrollY, setScrollY] = useState<number>(0);
 
-        stars.style.left = yPosition * 0.05 + "px";
-        stars.style.top = yPosition * 0.25 + "px";
-
-        meteor.style.left = yPosition * 1 + "px";
-        meteor.style.top = yPosition * 1 + "px";
-
-        moon.style.marginTop = yPosition * 1.25 + "px";
-        bottomCloud.style.top = yPosition * 0.25 + "px";
-        backMountains.style.top = yPosition * 0.1 + "px";
+    useEffect(() => {
+      const handleScroll = () => setScrollY(window.pageYOffset);
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
     });
-
 
   return (
     <>
@@ -47,24 +36,28 @@ export default function Hero() {
                 id="stars"
                 alt="starts in sky"
                 className="stars blend layer"
+                style={{ top: `${(scrollY * 0.25)}px`, left: `${(scrollY * 0.05)}px`}}
             />
             <img
                 src={left_meteor}
                 id="meteor"
                 alt="meteor"
                 className="meteor"
+                style={{ top: `${scrollY}px`, left: `${scrollY}px` } }
             />
             <img
                 src={white_moon}
                 id="whiteMoon"
                 alt="moon"
                 className="whiteMoon blend"
+                style={{ top: `${(scrollY * 1.25)}px`} }
             />
             <img
                 src={back_mountains}
                 id="backMountains"
                 alt="mountain"
                 className="layer"
+                style={{ top: `${scrollY * 0.1}px` } }
             />
             <img src={sea} id="sea" className="layer" alt="sea"/>
             <img
@@ -78,6 +71,7 @@ export default function Hero() {
                 id="bottomCloud"
                 alt="cloud"
                 className="layer bottomCloud blend"
+                style={{ top: `${scrollY * 0.25}px` } }
             />
 
             <img
@@ -86,9 +80,6 @@ export default function Hero() {
                 alt="cloud"
                 className="layer upperCloud blend"
             />
-
-
-
       </section>
     </>
   )
