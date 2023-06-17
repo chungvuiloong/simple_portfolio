@@ -2,37 +2,48 @@ import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 
 const projects = [
+// Web Development Projects
   {
-    title: 'Project 1',
-    description: 'This is the description of Project 1.',
+    title: 'Landing Page - Retink Media',
+    description: 'This is the entry task for Retink Media.',
     imageUrl: 'project1.jpg',
-    demoUrl: 'https://project1-demo.com',
-    githubUrl: 'https://github.com/project1',
+    demoUrl: 'https://retink-landingpage.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/retink_landingpage',
     category: 'web',
   },
   {
-    title: 'Project 2',
-    description: 'This is the description of Project 1.',
+    title: 'Landing Page - Liana Technologies',
+    description: 'This is the entry task for Liana Technologies.',
     imageUrl: 'project1.jpg',
-    demoUrl: 'https://project1-demo.com',
-    githubUrl: 'https://github.com/project1',
+    demoUrl: 'https://lianatechnologylandingpage.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/landingpage_liana_tech',
     category: 'web',
   },
   {
-    title: 'Project 3',
-    description: 'This is the description of Project 1.',
+    title: 'Wolt Delivery Fee Calculator',
+    description: 'This is the entry task for Wolt in 2023.',
     imageUrl: 'project1.jpg',
-    demoUrl: 'https://project1-demo.com',
-    githubUrl: 'https://github.com/project1',
+    demoUrl: 'https://mrjays-wolt-delivery-calculator.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/Wolt_Delivery_Calculator',
     category: 'web',
   },
+
+// Personal Projects
   {
-    title: 'Project 4',
-    description: 'This is the description of Project 1.',
+    title: 'Pokedex V2',
+    description: 'Pokedex V2',
     imageUrl: 'project1.jpg',
     demoUrl: 'https://project1-demo.com',
     githubUrl: 'https://github.com/project1',
-    category: 'web',
+    category: 'personal',
+  },
+  {
+    title: 'Travel App',
+    description: 'Travel App - All in one app for your travel conveniences.',
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://mrjaytravelapp.netlify.app/',
+    githubUrl: '#',
+    category: 'personal',
   },
 ];
 
@@ -48,14 +59,14 @@ interface PortfolioTabProps {
     activeCategory,
   }) => {
     return (
-      <div className="mb-4">
+      <div className="mt-5 mb-10">
         {categories.map((category) => (
           <button
             key={category.id}
             className={`px-4 py-2 rounded-lg ${
               activeCategory === category.id
-                ? 'bg-blue-500 text-white'
-                : 'bg-gray-200 text-gray-700'
+                ? 'bg-blue-900 text-white'
+                : 'bg-gray-200 text-black-700'
             }`}
             onClick={() => onChangeCategory(category.id)}
           >
@@ -91,23 +102,19 @@ interface PortfolioTabProps {
     return (
         <div className="p-10" style={{ backgroundColor: '#00dcda' }}>
             <div>
-                <div>Portfolio</div>
+                <div className='text-4xl'>Portfolio</div>
                 <PortfolioTab
                     categories={categories}
                     onChangeCategory={handleCategoryChange}
                     activeCategory={activeCategory}
                 />
             </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-
-        {filteredProjects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
-      </div>
-
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
+                {filteredProjects.map((project, index) => (
+                <ProjectCard key={index} project={project} />
+                ))}
+            </div>
         </div>
-
     );
   };
   
