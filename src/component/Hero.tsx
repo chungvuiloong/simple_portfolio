@@ -12,11 +12,10 @@ import React, { useState, useEffect } from 'react';
 
 
 export default function Hero() {
-
     const [scrollY, setScrollY] = useState<number>(0);
 
     useEffect(() => {
-      const handleScroll = () => setScrollY(window.pageYOffset);
+      const handleScroll = () => setScrollY(window.scrollY);
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
     });
@@ -24,7 +23,7 @@ export default function Hero() {
   return (
     <>
         <section className="layer-parent" id="heroBanner">
-            <h2 className="empty">Empty</h2>
+            {/* <h2 className="empty">Empty</h2> */}
             <img
                 src={dark_sky}
                 id="darkSky"
