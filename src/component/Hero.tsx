@@ -21,7 +21,10 @@ export default function Hero() {
     });
 
   return (
-    <>
+    <>  
+        <section className="p-4 text-white text-4xl text-center">
+            Scroll down to see more
+        </section>
         <section className="layer-parent" id="heroBanner">
             {/* <h2 className="empty">Empty</h2> */}
             <img
