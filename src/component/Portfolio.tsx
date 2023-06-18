@@ -38,7 +38,7 @@ const projects = [
 
 // Personal Projects
   {
-    title: 'Pokedex V2',
+    title: 'Pokedex V2 - In Progress',
     description: 'Pokedex V2',
     imageUrl: 'project1.jpg',
     demoUrl: 'https://project1-demo.com',
@@ -110,7 +110,12 @@ interface PortfolioTabProps {
     return (
         <div className="p-10" style={{ backgroundColor: '#00dcda' }}>
             <div>
-                <div className='text-4xl'>Portfolio</div>
+                <div 
+                  className='text-4xl font-bold tracking-tight sm:text-4xl' 
+                  style={{ color: 'var(--ext-dark-blue-01)' }}
+                >
+                  Portfolio
+                </div>
                 <PortfolioTab
                     categories={categories}
                     onChangeCategory={handleCategoryChange}
