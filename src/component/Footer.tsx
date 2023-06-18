@@ -17,7 +17,13 @@ const navigation = {
     ]
 }
 
+const getCurrentYear = (): number =>  {
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    return currentYear;
+  }
 
+const year = getCurrentYear();
   
   export default function Footer() {
     return (
@@ -37,9 +43,9 @@ const navigation = {
                 <SocialMediaTab key={index} {...socialIcon} />
             ))}
           </div>
-          <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-            &copy; 2020 Your Company, Inc. All rights reserved.
-          </p>
+            <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+                <span>&copy; {year} Your Company, Inc. All rights reserved.</span>
+            </p>
         </div>
       </footer>
     );
