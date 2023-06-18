@@ -4,11 +4,12 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 const navigation = {
     main: [
       { name: 'About', href: '#' },
-      { name: 'Blog', href: '#' },
+    //   { name: 'Blog', href: '#' },
+
       { name: 'Jobs', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Accessibility', href: '#' },
-      { name: 'Partners', href: '#' },
+    //   { name: 'Press', href: '#' },
+    //   { name: 'Accessibility', href: '#' },
+    //   { name: 'Partners', href: '#' },
     ],
     socialIcons: [
         { name: 'Facebook', href: 'https://www.facebook.com/', icon: FaFacebook },
@@ -44,7 +45,7 @@ const year = getCurrentYear();
             ))}
           </div>
             <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-                <span>&copy; {year} Your Company, Inc. All rights reserved.</span>
+                <span>&copy; {year} MrJay's Journey</span>
             </p>
         </div>
       </footer>
