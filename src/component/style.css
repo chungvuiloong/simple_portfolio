@@ -13,11 +13,20 @@
 }
 
 :root {
+  /* Extract from Huemint.com */
+  --ext-black: #000008;
+  --ext-dark-blue-01: #00224c;
+  --ext-dark-blue-02: #005d92;
+  --ext-blue-01: #00b8bd;
+  --ext-blue-02: #4faeff;
+  --ext-blue-03: #3977b7;
+  --ext-blue-04: #12d5f0; 
+  --ext-grey: #cecde7;
+  --ext-dark-grey: #435066;
+
+  --ext-white: #ffffff;
   /* Dark blue */
   --blue1: #006091; 
-
-
-
   --black: black;
   --white: white;
 
