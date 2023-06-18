@@ -27,6 +27,14 @@ const projects = [
     githubUrl: 'https://github.com/jeresulovuo/Wolt_Delivery_Calculator',
     category: 'web',
   },
+  {
+    title: 'Countries App',
+    description: 'A web app that display info about countries.',
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://countries-basic.vercel.app/',
+    githubUrl: 'https://github.com/jirimicvl/countriesBasic/',
+    category: 'web',
+  },
 
 // Personal Projects
   {
