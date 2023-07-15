@@ -1,3 +1,5 @@
+import Cookies from "js-cookie";
+
 const people = [
     {
         name: 'Jere Sulovuo',
@@ -28,6 +30,11 @@ const people = [
       },
     // More people...
   ]
+
+  // console.log(cookies.get());
+  
+  // Use the cookie value as needed
+  console.log(Cookies.get() );
   
   export default function Team () {
     return (
@@ -40,7 +47,6 @@ const people = [
             </p>
           </div>
           <ul
-            role="list"
             className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
           >
             {people.map((person) => (
