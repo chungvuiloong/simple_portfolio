@@ -19,13 +19,14 @@ const projects = [
     githubUrl: 'https://github.com/jeresulovuo/landingpage_liana_tech',
     category: 'web',
   },
+  // Web application
   {
     title: 'Wolt Delivery Fee Calculator',
     description: 'This is the entry task for Wolt in 2023.',
     imageUrl: 'project1.jpg',
     demoUrl: 'https://mrjays-wolt-delivery-calculator.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/Wolt_Delivery_Calculator',
-    category: 'web',
+    category: 'web app',
   },
   {
     title: 'Countries App',
@@ -33,7 +34,7 @@ const projects = [
     imageUrl: 'project1.jpg',
     demoUrl: 'https://countries-basic.vercel.app/',
     githubUrl: 'https://github.com/jirimicvl/countriesBasic/',
-    category: 'web',
+    category: 'web app',
   },
 
 // Personal Projects
@@ -90,6 +91,7 @@ interface PortfolioTabProps {
   
     const categories = [
       { id: 'web', label: 'Web Development' },
+      { id: 'web app', label: 'Web Application' },
     //   { id: 'mobile', label: 'Mobile Development' },
     //   { id: 'data', label: 'Data Science and Analysis' },
     //   { id: 'software', label: 'Software Development' },
@@ -108,26 +110,27 @@ interface PortfolioTabProps {
     };
   
     return (
-        <div className="p-10" style={{ backgroundColor: '#00dcda' }}>
-            <div>
-                <div 
-                  className='text-4xl font-bold tracking-tight sm:text-4xl' 
-                  style={{ color: 'var(--ext-dark-blue-01)' }}
-                >
-                  Portfolio
-                </div>
-                <PortfolioTab
+      <section className="px-6 py-24 sm:py-32 lg:px-8" style={{ backgroundColor: '#00dcda' }} >
+        <div className="mx-auto max-w-7xl lg:flex lg:items-center lg:justify-between">
+          <h2 className="text-4xl font-bold tracking-tight sm:text-4xl"  
+                style={{ color: 'var(--ext-dark-blue-01)' }}
+          >
+            Portfolio
+          </h2>
+          <PortfolioTab
                     categories={categories}
                     onChangeCategory={handleCategoryChange}
                     activeCategory={activeCategory}
-                />
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
-                {filteredProjects.map((project, index) => (
-                <ProjectCard key={index} project={project} />
-                ))}
-            </div>
+          />
         </div>
+        <div className="mx-auto max-w-7xl lg:flex lg:items-center lg:justify-between">
+          <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {filteredProjects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </ul>
+        </div>
+      </section>
     );
   };
   
