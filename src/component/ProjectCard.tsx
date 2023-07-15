@@ -29,18 +29,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             href={demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-700"
+            className="my-auto text-blue-500 hover:text-blue-700"
             >
             See more
             </a>
-            <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white py-2 px-4 rounded flex items-center space-x-2 hover:bg-gray-800"
-            style={{
-                backgroundColor: '#24292f'
-            }}
+            <a href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white py-2 px-4 rounded flex items-center space-x-2 hover:bg-gray-800"
+                style={{
+                    backgroundColor: '#24292f'
+                }}
             >
             <FaGithub className="text-white" />
             <span>Github</span>
