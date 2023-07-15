@@ -35,8 +35,8 @@ export default function Profile() {
       }, []);
 
     return (
-        <section style={{ backgroundColor: '#00dcda' }}>
-            <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
+        <section className="px-6 py-24 sm:py-32 lg:px-8" style={{ backgroundColor: '#00dcda' }}>
+            <div className="mx-auto max-w-7xl  lg:flex lg:items-center lg:justify-between">
                 <h2 className="text-4xl font-bold tracking-tight sm:text-4xl"  
                     style={{ color: 'var(--ext-dark-blue-01)' }}
                 >
