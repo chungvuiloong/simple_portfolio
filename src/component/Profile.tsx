@@ -46,7 +46,7 @@ export default function Profile() {
                     Hi there ! I am Jere Sulovuo. <br />
                     An aspiring V-shaped programmer who has strong passion in&nbsp; 
                     <span className={fadeProp.fade} style={{ color: 'var(--ext-dark-blue-01)' }}>
-                        {HASH_TAGS_WORDS[wordOrder]}
+                        {INTERESTS[wordOrder]}
                     </span>
                 </p>
             </div>
