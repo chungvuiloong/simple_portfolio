@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const FADE_INTERVAL_MS = 1500;
 const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2;
-const HASH_TAGS_WORDS = [
+const INTERESTS = [
     `UX/ UI`,
     `Service Design`,
     `Front-end`,
@@ -28,12 +28,12 @@ export default function Profile() {
     
       useEffect(() => {
         const wordTimeout = setInterval(() => {
-          setWordOrder((prevWordOrder) => (prevWordOrder + 1) % HASH_TAGS_WORDS.length);
+          setWordOrder((prevWordOrder) => (prevWordOrder + 1) % INTERESTS.length);
         }, WORD_CHANGE_INTERVAL_MS);
     
         return () => clearInterval(wordTimeout);
       }, []);
-      
+
     return (
         <section style={{ backgroundColor: '#00dcda' }}>
             <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
