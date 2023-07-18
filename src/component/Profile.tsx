@@ -42,8 +42,8 @@ export default function Profile() {
                 >
                     Ready to dive in?
                 </h2>
-                <p className="font-semibold mx-auto mt-6 max-w-xl text-2xl leading-8 text-white">
-                    Hi there ! I am Jere Sulovuo. <br />
+                <p className="font-semibold mx-auto mt-6 max-w-xl text-2xl leading-8 text-white text-end">
+                    Hi there ! I am Jere Sulovuo<br/>
                     An aspiring V-shaped programmer who has strong passion in&nbsp; 
                     <span className={fadeProp.fade} style={{ color: 'var(--ext-dark-blue-01)' }}>
                         {INTERESTS[wordOrder]}
