@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Open Sans', 'sans-serif'],
+        'sans': ['Helvetica Neue', 'Open Sans', 'sans-serif'],
       },
       fontWeight: {
         '300': 300,
