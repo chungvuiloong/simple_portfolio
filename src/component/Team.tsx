@@ -1,4 +1,4 @@
-import Cookies from "js-cookie";
+// import Cookies from "js-cookie";
 
 const people = [
     {
@@ -31,10 +31,22 @@ const people = [
     // More people...
   ]
 
-  // console.log(cookies.get());
-  
-  // Use the cookie value as needed
-  console.log(Cookies.get() );
+// var allCookies = document.cookie;
+// var cookieObject = parseCookies(allCookies);
+
+// function parseCookies(cookieString: any) {
+//   var cookies: any = {};
+//   if (cookieString) {
+//     var cookieArray = cookieString.split(';');
+//     for (var i = 0; i < cookieArray.length; i++) {
+//       var cookie = cookieArray[i].trim().split('=');
+//       var name = decodeURIComponent(cookie[0]);
+//       var value = decodeURIComponent(cookie[1]);
+//       cookies[name] = value;
+//     }
+//   }
+//   return cookies;
+// }
   
   export default function Team () {
     return (
