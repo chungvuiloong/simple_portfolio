@@ -13,7 +13,7 @@ function App() {
       <Profile />
       <Portfolio />
       <Team />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
