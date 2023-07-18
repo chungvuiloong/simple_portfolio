@@ -10,6 +10,8 @@ const projects = [
     demoUrl: 'https://retink-landingpage.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/retink_landingpage',
     category: 'web',
+    year: 2023,
+    status: 'Completed',
   },
   {
     title: 'Landing Page - Liana Technologies',
@@ -18,6 +20,8 @@ const projects = [
     demoUrl: 'https://lianatechnologylandingpage.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/landingpage_liana_tech',
     category: 'web',
+    year: 2022,
+    status: 'Completed',
   },
   // Web application
   {
@@ -27,6 +31,8 @@ const projects = [
     demoUrl: 'https://mrjays-wolt-delivery-calculator.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/Wolt_Delivery_Calculator',
     category: 'web app',
+    year: 2023,
+    status: 'In redesigning progress',
   },
   {
     title: 'Countries App',
@@ -35,6 +41,8 @@ const projects = [
     demoUrl: 'https://countries-basic.vercel.app/',
     githubUrl: 'https://github.com/jirimicvl/countriesBasic/',
     category: 'web app',
+    year: 2022,
+    status: 'In redesigning progress',
   },
 
 // Personal Projects
@@ -45,6 +53,8 @@ const projects = [
     demoUrl: 'https://project1-demo.com',
     githubUrl: 'https://github.com/project1',
     category: 'personal',
+    year: 2023,
+    status: 'In progress',
   },
   {
     title: 'Travel App',
@@ -53,6 +63,8 @@ const projects = [
     demoUrl: 'https://mrjaytravelapp.netlify.app/',
     githubUrl: '#',
     category: 'personal',
+    year:2022,
+    status: 'In redesigning progress',
   },
 ];
 
