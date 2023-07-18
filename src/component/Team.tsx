@@ -4,6 +4,7 @@ const people = [
     {
         name: 'Jere Sulovuo',
         role: 'Aspiring v-shaped programmer',
+        company: 'Your company',
         imageUrl:
             '',
         twitterUrl: '#',
@@ -13,6 +14,7 @@ const people = [
     {
         name: 'Your name',
         role: 'My future teammate',
+        company: 'Your company',
         imageUrl:
           '',
         twitterUrl: '#',
@@ -22,6 +24,7 @@ const people = [
     {
         name: 'Our future colleague name',
         role: 'Our future colleague',
+        company: 'Our company',
         imageUrl:
           '',
         twitterUrl: '#',
@@ -66,6 +69,7 @@ const people = [
                 {/* <img className="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src={person.imageUrl} alt="" /> */}
                 <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-white">{person.name}</h3>
                 <p className="text-sm leading-6 text-gray-400">{person.role}</p>
+                <p className="text-sm leading-6 text-gray-400">{person.company}</p>
                 <ul role="list" className="mt-6 flex justify-center gap-x-6">
                   <li>
                     <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-300">
