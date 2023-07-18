@@ -112,7 +112,8 @@ interface PortfolioTabProps {
     return (
       <section className="px-6 py-12 sm:py-8 lg:px-8" style={{ backgroundColor: '#00dcda' }} >
         <div className="mx-auto max-w-7xl lg:flex lg:items-center lg:justify-between">
-          <h2 className="text-4xl font-bold tracking-tight sm:text-4xl"  
+          <h2 className="text-4xl tracking-tight sm:text-4xl 
+          font-sans font-600"  
                 style={{ color: 'var(--ext-dark-blue-01)' }}
           >
             Portfolio
