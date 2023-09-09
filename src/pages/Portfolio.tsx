@@ -131,9 +131,9 @@ interface PortfolioTabProps {
             Portfolio
           </h2>
           <PortfolioTab
-                    categories={categories}
-                    onChangeCategory={handleCategoryChange}
-                    activeCategory={activeCategory}
+          categories={categories}
+          onChangeCategory={handleCategoryChange}
+          activeCategory={activeCategory}
           />
         </div>
         <div className="mx-auto max-w-7xl lg:flex lg:items-center lg:justify-between">
