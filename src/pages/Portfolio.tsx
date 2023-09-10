@@ -123,7 +123,7 @@ interface PortfolioTabProps {
     };
   
     return (
-        <section className="py-10" style={{ backgroundColor: '#00dcda' }} >
+        <section className="py-10 px-6 lg:px-10" style={{ backgroundColor: '#00dcda' }} >
             <div className="mx-auto container">
                 <div className='lg:flex lg:items-center lg:justify-between'>
                      <h2 className="text-4xl tracking-tight sm:text-4xl 
