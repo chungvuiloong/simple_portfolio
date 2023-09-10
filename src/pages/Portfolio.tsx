@@ -122,28 +122,28 @@ interface PortfolioTabProps {
     };
   
     return (
-      <section className="px-6 py-12 sm:py-8 lg:px-8" style={{ backgroundColor: '#00dcda' }} >
-        <div className="mx-auto max-w-7xl lg:flex lg:items-center lg:justify-between">
-          <h2 className="text-4xl tracking-tight sm:text-4xl 
-          font-sans font-500"  
-                style={{ color: 'var(--ext-dark-blue-01)' }}
-          >
-            Portfolio
-          </h2>
-          <PortfolioTab
-          categories={categories}
-          onChangeCategory={handleCategoryChange}
-          activeCategory={activeCategory}
-          />
-        </div>
-        <div className="mx-auto max-w-7xl lg:flex lg:items-center lg:justify-between">
-          <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {filteredProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
-          </ul>
-        </div>
-      </section>
+        <section className="py-10" style={{ backgroundColor: '#00dcda' }} >
+            <div className="mx-auto container">
+                <div className='lg:flex lg:items-center lg:justify-between'>
+                     <h2 className="text-4xl tracking-tight sm:text-4xl 
+                        font-sans font-500"  
+                        style={{ color: 'var(--ext-dark-blue-01)' }}
+                    >
+                    Portfolio
+                    </h2>
+                    <PortfolioTab
+                        categories={categories}
+                        onChangeCategory={handleCategoryChange}
+                        activeCategory={activeCategory}
+                    />
+                </div>
+                <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    {filteredProjects.map((project, index) => (
+                    <ProjectCard key={index} project={project} />
+                    ))}
+                </ul>
+            </div>
+        </section>
     );
   };
   
