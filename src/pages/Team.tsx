@@ -4,7 +4,7 @@ const people = [
     {
         name: 'Jere Sulovuo',
         role: 'Aspiring v-shaped programmer',
-        company: 'Your company',
+        company: 'Our company',
         imageUrl:
             '',
         twitterUrl: '#',
@@ -14,7 +14,7 @@ const people = [
     {
         name: 'Your name',
         role: 'My future teammate',
-        company: 'Your company',
+        company: 'Our company',
         imageUrl:
           '',
         twitterUrl: '#',
