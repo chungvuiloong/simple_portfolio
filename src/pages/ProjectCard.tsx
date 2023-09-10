@@ -32,12 +32,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         border-2 border-blue-900 rounded-xl
         font-san'
     >
-        <Typography className='pb-3 row-span-1 text-end self-end'>
+        <Typography variant='h4' className='pb-3 row-span-1 text-end self-end'>
             <div className='pr-5'>{title}</div>
             <hr className="h-3 border-t-0 bg-blue-900 rounded-l-lg" />
         </Typography>
-        <CardBody className="pr-5">{description}
+        <CardBody className="pr-5">
+            <Typography variant='paragraph'>
+                {description}
+            </Typography>
         </CardBody>
+
         <CardFooter className="pr-5 row-span-1 flex justify-between">
             <a
                 href={demoUrl}
@@ -47,7 +51,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 >
                 See more
             </a>
-            <Button className='flex gap-1 bg-gray-800'>
+            <Button className='flex gap-1 bg-gray-800 w-fit h-fit'>
                 <FaGithub className="text-white my-auto" />
                 <span>Github</span>
             </Button>
