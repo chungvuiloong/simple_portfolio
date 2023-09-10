@@ -138,7 +138,7 @@ interface PortfolioTabProps {
                         activeCategory={activeCategory}
                     />
                 </div>
-                <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <ul className="flex flex-row flex-wrap justify-center mx-auto gap-10">
                     {filteredProjects.map((project, index) => (
                     <ProjectCard key={index} project={project} />
                     ))}
