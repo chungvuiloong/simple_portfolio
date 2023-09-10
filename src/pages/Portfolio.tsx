@@ -81,7 +81,7 @@ interface PortfolioTabProps {
     activeCategory,
   }) => {
     return (
-      <div className="mt-5 mb-10">
+      <div className='mt-5 mb-10'>
         {categories.map((category) => (
           <Button
             key={category.id}
@@ -123,11 +123,11 @@ interface PortfolioTabProps {
     };
   
     return (
-        <section className="py-10 px-6 lg:px-10" style={{ backgroundColor: '#00dcda' }} >
-            <div className="mx-auto container">
+        <section className='py-24 sm:py-32 px-6 lg:px-10' style={{ backgroundColor: '#00dcda' }} >
+            <div className='mx-auto container'>
                 <div className='lg:flex lg:items-center lg:justify-between'>
-                     <h2 className="text-4xl tracking-tight sm:text-4xl 
-                        font-sans font-500"  
+                     <h2 className='text-4xl tracking-tight sm:text-4xl 
+                        font-sans font-500'  
                         style={{ color: 'var(--ext-dark-blue-01)' }}
                     >
                     Portfolio
@@ -138,7 +138,7 @@ interface PortfolioTabProps {
                         activeCategory={activeCategory}
                     />
                 </div>
-                <ul className="flex flex-row flex-wrap justify-center mx-auto gap-10">
+                <ul className='flex flex-row flex-wrap justify-center mx-auto gap-10'>
                     {filteredProjects.map((project, index) => (
                     <ProjectCard key={index} project={project} />
                     ))}
