@@ -1,5 +1,7 @@
 // import Cookies from "js-cookie";
 
+import { Typography } from "@material-tailwind/react"
+
 const people = [
     {
         name: 'Jere Sulovuo',
@@ -56,10 +58,10 @@ const people = [
       <section className="bg-gray-900 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
           <div className="mx-auto max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Meet our team</h2>
-            <p className="mt-4 text-lg leading-8 text-gray-400">
-              We’re ( yes, we ! you are part of our future team), a dynamic group of individuals who are passionate about what we do.
-            </p>
+			<Typography variant='h2' color='white'>Meet our team</Typography>
+			<Typography variant='paragraph' className="mt-4 text-lg leading-8 text-gray-400"> 
+				We’re ( yes, we ! you are part of our future team), a dynamic group of individuals who are passionate about what we do.
+           </Typography>
           </div>
           <ul
             className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
