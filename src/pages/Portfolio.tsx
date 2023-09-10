@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
+import { Button } from '@material-tailwind/react';
 
 const projects = [
 // Web Development Projects
@@ -82,7 +83,7 @@ interface PortfolioTabProps {
     return (
       <div className="mt-5 mb-10">
         {categories.map((category) => (
-          <button
+          <Button
             key={category.id}
             className={`px-4 py-2 rounded-lg ${
               activeCategory === category.id
@@ -92,7 +93,7 @@ interface PortfolioTabProps {
             onClick={() => onChangeCategory(category.id)}
           >
             {category.label}
-          </button>
+          </Button>
         ))}
       </div>
     );
