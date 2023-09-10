@@ -36,7 +36,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <div className='pr-5'>{title}</div>
             <hr className="h-3 border-t-0 bg-blue-900 rounded-l-lg" />
         </Typography>
-        <CardBody>{description}
+        <CardBody className="pr-5">{description}
         </CardBody>
         <CardFooter className="pr-5 row-span-1 flex justify-between">
             <a
