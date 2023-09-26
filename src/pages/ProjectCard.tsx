@@ -58,10 +58,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     //         </CardFooter> */}
     // </Card>
     <Card className='flex flex-col pl-5 py-3 w-[300px]'>
-        <Typography variant='h4' className='min-h-[70px]'>
-            <div className='pr-5'>{title}</div>
+        <Typography variant='h4' className='min-h-[70px] flex flex-col-reverse pr-5 text-end'>
+            {title}
         </Typography>
-        <CardBody style={{ height: '-webkit-fill-available'}}>
+        <CardBody className='mt-2' style={{ height: '-webkit-fill-available'}}>
             <hr className="h-3 border-t-0 bg-blue-900 rounded-l-lg" />
             <Typography variant='paragraph' className="mt-5 pr-5">
                 {description}
