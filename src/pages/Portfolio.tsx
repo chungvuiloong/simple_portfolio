@@ -6,7 +6,11 @@ const projects = [
 // Web Development Projects
   {
     title: 'BMI',
-    description: 'This is a premium challenge from Frontend Mentor',
+    // description: <>This is a premium challenge from <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. Access the challenge from here https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T</>,
+    description:  <>
+    This is a premium challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+    Access the challenge from <a href="https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T" className='underline underline-offset-4'>here </a>
+                          </>,
     imageUrl: '',
     demoUrl: 'https://mrjays-bmi-calculator.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/bmi_calculator',
@@ -113,6 +117,7 @@ interface PortfolioTabProps {
     const [activeCategory, setActiveCategory] = useState<string>('web');
   
     const categories = [
+      { id: 'components', label: 'Components' },
       { id: 'web', label: 'Web Development' },
       { id: 'web app', label: 'Web Application' },
     //   { id: 'mobile', label: 'Mobile Development' },

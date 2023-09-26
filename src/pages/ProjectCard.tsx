@@ -6,12 +6,12 @@ import {
     CardBody,
     CardFooter,
 } from "@material-tailwind/react";
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { FaGithub } from 'react-icons/fa';
 
 interface Project {
     title: string;
-    description: string;
+    description: string | ReactNode;
     imageUrl: string;
     demoUrl: string;
     githubUrl: string;
