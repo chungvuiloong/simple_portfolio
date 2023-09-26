@@ -19,20 +19,6 @@ const projects = [
   },
   // Web Development Projects
   {
-    title: 'BMI',
-    // description: <>This is a premium challenge from <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. Access the challenge from here https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T</>,
-    description:  <>
-    This is a premium challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
-    Access the challenge from <a href="https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T" className='underline underline-offset-4'>here </a>
-                          </>,
-    imageUrl: '',
-    demoUrl: 'https://mrjays-bmi-calculator.vercel.app/',
-    githubUrl: 'https://github.com/jeresulovuo/bmi_calculator',
-    category: 'web',
-    year: 2023,
-    status: 'Completed',
-  },
-  {
     title: 'Landing Page - Retink Media',
     description: 'This is the entry task for Retink Media.',
     imageUrl: 'project1.jpg',
@@ -53,6 +39,20 @@ const projects = [
     status: 'Completed',
   },
   // Web application
+  {
+    title: 'BMI',
+    // description: <>This is a premium challenge from <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. Access the challenge from here https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T</>,
+    description:  <>
+    This is a premium challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+    Access the challenge from <a href="https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T" className='underline underline-offset-4'>here </a>
+                          </>,
+    imageUrl: '',
+    demoUrl: 'https://mrjays-bmi-calculator.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/bmi_calculator',
+    category: 'web app',
+    year: 2023,
+    status: 'Completed',
+  },
   {
     title: 'Wolt Delivery Fee Calculator',
     description: 'This is the entry task for Wolt in 2023.',
