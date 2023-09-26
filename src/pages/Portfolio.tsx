@@ -3,7 +3,21 @@ import { ProjectCard } from './ProjectCard';
 import { Button } from '@material-tailwind/react';
 
 const projects = [
-// Web Development Projects
+  // Components
+  {
+    title: 'QR code',
+    description: <>
+    This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+    Access the challenge from <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" className='underline underline-offset-4'>here</a>
+                          </>,
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://mrjays-qrcode-component.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/qr-code-component',
+    category: 'components',
+    year: 2023,
+    status: 'Completed',
+  },
+  // Web Development Projects
   {
     title: 'BMI',
     // description: <>This is a premium challenge from <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. Access the challenge from here https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T</>,
@@ -117,9 +131,9 @@ interface PortfolioTabProps {
     const [activeCategory, setActiveCategory] = useState<string>('web');
   
     const categories = [
-      { id: 'components', label: 'Components' },
       { id: 'web', label: 'Web Development' },
       { id: 'web app', label: 'Web Application' },
+      { id: 'components', label: 'Components' },
     //   { id: 'mobile', label: 'Mobile Development' },
     //   { id: 'data', label: 'Data Science and Analysis' },
     //   { id: 'software', label: 'Software Development' },
