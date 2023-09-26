@@ -10,11 +10,11 @@ import React, { ReactNode } from 'react';
 import { FaGithub } from 'react-icons/fa';
 
 interface Project {
-    title: string;
-    description: string | ReactNode;
-    imageUrl: string;
-    demoUrl: string;
-    githubUrl: string;
+    title?: string;
+    description?: string | ReactNode;
+    imageUrl?: string;
+    demoUrl?: string;
+    githubUrl?: string;
 }
 
 interface ProjectCardProps {
@@ -23,6 +23,7 @@ interface ProjectCardProps {
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     const { title, description, imageUrl, demoUrl, githubUrl } = project;
+   
     return (
     // <Card className='
     //     basis-1/4
@@ -76,12 +77,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 >
                 See more
             </a>
-            <a href={githubUrl}>
-                <Button className='flex gap-2 bg-gray-800 w-fit h-fit'>
-                    <FaGithub className="text-white my-auto" />
-                    <Typography variant="small">Github</Typography>
-                </Button>
-            </a>
+            {
+                githubUrl !== undefined ?         
+                    <a href={githubUrl}>
+                        <Button className='flex gap-2 bg-gray-800 w-fit h-fit'>
+                            <FaGithub className="text-white my-auto" />
+                            <Typography variant="small">Github</Typography>
+                        </Button>
+                    </a>
+                : <></>
+            }
         </CardFooter>
     </Card>
   );
