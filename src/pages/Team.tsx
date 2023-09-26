@@ -72,7 +72,7 @@ const people = [
                 <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-white">{person.name}</h3>
                 <p className="text-sm leading-6 text-gray-400">{person.role}</p>
                 <p className="text-sm leading-6 text-gray-400">{person.company}</p>
-                <ul role="list" className="mt-6 flex justify-center gap-x-6">
+                <ul className="mt-6 flex justify-center gap-x-6">
                   <li>
                     <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-300">
                       <span className="sr-only">Twitter</span>
