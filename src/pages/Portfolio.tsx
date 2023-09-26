@@ -5,6 +5,16 @@ import { Button } from '@material-tailwind/react';
 const projects = [
 // Web Development Projects
   {
+    title: 'BMI',
+    description: 'This is a premium challenge from Frontend Mentor',
+    imageUrl: '',
+    demoUrl: 'https://github.com/jeresulovuo/bmi_calculator',
+    githubUrl: '',
+    category: 'web',
+    year: 2023,
+    status: 'Completed',
+  },
+  {
     title: 'Landing Page - Retink Media',
     description: 'This is the entry task for Retink Media.',
     imageUrl: 'project1.jpg',
