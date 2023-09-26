@@ -76,10 +76,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 >
                 See more
             </a>
-            <Button className='flex gap-2 bg-gray-800 w-fit h-fit'>
-                <FaGithub className="text-white my-auto" />
-                <Typography variant="small">Github</Typography>
-            </Button>
+            <a href={githubUrl}>
+                <Button className='flex gap-2 bg-gray-800 w-fit h-fit'>
+                    <FaGithub className="text-white my-auto" />
+                    <Typography variant="small">Github</Typography>
+                </Button>
+            </a>
         </CardFooter>
     </Card>
   );
