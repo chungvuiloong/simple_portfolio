@@ -38,11 +38,7 @@ export default function Profile() {
         <section className='py-24 sm:py-32 px-6 lg:px-10' style={{ backgroundColor: '#00dcda' }} >
             <div className='mx-auto container'>
                 <div className="lg:flex lg:items-center lg:justify-between">
-                    <h2 className="text-4xl tracking-tight sm:text-4xl 
-                    font-sans font-600
-                    "  
-                        style={{ color: 'var(--ext-dark-blue-01)' }}
-                    >
+                    <h2 style={{ color: 'var(--ext-dark-blue-01)' }}>
                         Ready to dive in?
                     </h2>
                     <p className="font-semibold mt-6 text-2xl leading-8 text-white text-end">
