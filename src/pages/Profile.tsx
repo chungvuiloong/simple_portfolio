@@ -1,3 +1,4 @@
+import { Typography } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
 
 const FADE_INTERVAL_MS = 1500;
@@ -38,9 +39,9 @@ export default function Profile() {
         <section className='py-24 sm:py-32 px-6 lg:px-10' style={{ backgroundColor: '#00dcda' }} >
             <div className='mx-auto container'>
                 <div className="lg:flex lg:items-center lg:justify-between">
-                    <h2 style={{ color: 'var(--ext-dark-blue-01)' }}>
+                    <Typography variant="h2" style={{ color: 'var(--ext-dark-blue-01)' }}>
                         Ready to dive in?
-                    </h2>
+                    </Typography>
                     <p className="font-semibold mt-6 text-2xl leading-8 text-white text-end">
                         Hi there ! I am Jere Sulovuo<br/>
                         An aspiring V-shaped programmer<br /> 
