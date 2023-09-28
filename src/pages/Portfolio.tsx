@@ -21,7 +21,7 @@ const projects = [
     title: 'Order Summary',
     description: <>
     This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
-    Access the challenge from <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub" className='underline underline-offset-4'>here</a>
+    Access the challenge from <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj" className='underline underline-offset-4'>here</a>
                           </>,
     imageUrl: 'project1.jpg',
     demoUrl: 'https://mrjays-order-summary-component.vercel.app/',
