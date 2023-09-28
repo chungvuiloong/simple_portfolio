@@ -42,14 +42,14 @@ export default function Profile() {
                     <Typography variant="h2" style={{ color: 'var(--ext-dark-blue-01)' }}>
                         Ready to dive in?
                     </Typography>
-                    <p className="font-semibold mt-6 text-2xl leading-8 text-white text-end">
+                    <Typography variant="h3" color="white" className="mt-6 text-end">
                         Hi there ! I am Jere Sulovuo<br/>
                         An aspiring V-shaped programmer<br /> 
                         who has strong passion in<br /> 
                         <span className={fadeProp.fade} style={{ color: 'var(--ext-dark-blue-01)' }}>
                             {INTERESTS[wordOrder]}
                         </span>
-                    </p>
+                    </Typography>
                 </div>
             </div>
         </section>
