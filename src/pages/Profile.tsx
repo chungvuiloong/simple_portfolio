@@ -38,12 +38,12 @@ export default function Profile() {
     return (        
         <section className='py-24 sm:py-32 px-6 lg:px-10' style={{ backgroundColor: '#00dcda' }} >
             <div className='mx-auto container'>
-                <div className="lg:flex lg:items-center lg:justify-between">
-                    <Typography variant="h2" style={{ color: 'var(--ext-dark-blue-01)' }}>
+                <div className="flex flex-col justify-center">
+                    <Typography variant="h2" style={{ color: 'var(--ext-dark-blue-01)' }} className="text-center">
                         Ready to dive in?
                     </Typography>
-                    <Typography variant="h3" color="white" className="mt-6 text-end">
-                        Hi there ! I am Jere Sulovuo<br/>
+                    <Typography variant="h4" color="white" className="mt-6 text-center">
+                        Hi there ! I am Jere Sulovuo.<br/>
                         An aspiring V-shaped programmer<br /> 
                         who has strong passion in<br /> 
                         <span className={fadeProp.fade} style={{ color: 'var(--ext-dark-blue-01)' }}>
