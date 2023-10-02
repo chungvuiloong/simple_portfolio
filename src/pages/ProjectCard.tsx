@@ -15,6 +15,7 @@ interface Project {
     imageUrl?: string;
     demoUrl?: string;
     githubUrl?: string;
+    status?: string;
 }
 
 interface ProjectCardProps {
@@ -22,7 +23,7 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-    const { title, description, imageUrl, demoUrl, githubUrl } = project;
+    const { title, description, imageUrl, demoUrl, githubUrl, status } = project;
    
     return (
     // <Card className='
@@ -64,9 +65,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </Typography>
         <CardBody className='mt-2' style={{ height: '-webkit-fill-available'}}>
             <hr className="h-3 border-t-0 bg-blue-900 rounded-l-lg" />
-            <Typography variant='paragraph' className="mt-5 pr-5">
-                {description}
-            </Typography>
+            <div className="mt-5 pr-5">
+                <Typography >{status}</Typography>
+                <Typography variant='paragraph'>
+                    {description}
+                </Typography>
+            </div>
         </CardBody>
         <CardFooter className="mt-5 pr-5 flex justify-between">
             <a
