@@ -66,16 +66,16 @@ const projects = [
     year: 2023,
     status: 'Completed',
   },
-  {
-    title: 'Wolt Delivery Fee Calculator',
-    description: 'This is the entry task for Wolt in 2023.',
-    imageUrl: 'project1.jpg',
-    demoUrl: 'https://mrjays-wolt-delivery-calculator.vercel.app/',
-    githubUrl: 'https://github.com/jeresulovuo/Wolt_Delivery_Calculator',
-    category: 'web app',
-    year: 2023,
-    status: 'In redesigning progress',
-  },
+  // {
+  //   title: 'Wolt Delivery Fee Calculator',
+  //   description: 'This is the entry task for Wolt in 2023.',
+  //   imageUrl: 'project1.jpg',
+  //   demoUrl: 'https://mrjays-wolt-delivery-calculator.vercel.app/',
+  //   githubUrl: 'https://github.com/jeresulovuo/Wolt_Delivery_Calculator',
+  //   category: 'web app',
+  //   year: 2023,
+  //   status: 'In redesigning progress',
+  // },
   {
     title: 'Countries App',
     description: 'A web app that display info about countries.',
@@ -88,16 +88,16 @@ const projects = [
   },
 
 // Personal Projects
-  {
-    title: 'Pokedex V2 - In Progress',
-    description: 'Pokedex V2',
-    imageUrl: 'project1.jpg',
-    demoUrl: 'https://project1-demo.com',
-    githubUrl: 'https://github.com/project1',
-    category: 'personal',
-    year: 2023,
-    status: 'In progress',
-  },
+  // {
+  //   title: 'Pokedex V2 - In Progress',
+  //   description: 'Pokedex V2',
+  //   imageUrl: 'project1.jpg',
+  //   demoUrl: 'https://project1-demo.com',
+  //   githubUrl: 'https://github.com/project1',
+  //   category: 'personal',
+  //   year: 2023,
+  //   status: 'In progress',
+  // },
   {
     title: 'Travel App',
     description: 'Travel App - All in one app for your travel conveniences.',
