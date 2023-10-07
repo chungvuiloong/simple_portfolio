@@ -5,6 +5,19 @@ import { Button } from '@material-tailwind/react';
 const projects = [
   // Components
   {
+    title: 'Single price grid',
+    description: <>
+    This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+    Access the challenge from <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" className='underline underline-offset-4'>here</a>
+                          </>,
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://mrjays-single-price-grid-component.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/single-price-grid-component',
+    category: 'components',
+    year: 2023,
+    status: 'Completed',
+  },
+  {
     title: 'QR code',
     description: <>
     This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
