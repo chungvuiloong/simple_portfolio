@@ -43,9 +43,24 @@ const projects = [
     year: 2023,
     status: 'Completed',
   },
+
   // Web Development Projects
   {
-    title: 'Landing Page - Retink Media',
+    title: 'News Landing Page',
+    description:
+      <>
+        This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+        Access the challenge from <a href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" className='underline underline-offset-4'>here</a>
+     </>,
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://mrjays-news-landing-page.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/news-landing-page',
+    category: 'web',
+    year: 2023,
+    status: 'Completed',
+  },
+  {
+    title: 'Retink Media Landing Page',
     description: 'This is the entry task for Retink Media.',
     imageUrl: 'project1.jpg',
     demoUrl: 'https://retink-landingpage.vercel.app/',
@@ -55,7 +70,7 @@ const projects = [
     status: 'Completed',
   },
   {
-    title: 'Landing Page - Liana Technologies',
+    title: 'Liana Technologies Landing Page',
     description: 'This is the entry task for Liana Technologies.',
     imageUrl: 'project1.jpg',
     demoUrl: 'https://lianatechnologylandingpage.vercel.app/',
@@ -64,6 +79,7 @@ const projects = [
     year: 2022,
     status: 'Completed',
   },
+
   // Web application
   {
     title: 'BMI',
