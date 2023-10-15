@@ -5,6 +5,19 @@ import { Button } from '@material-tailwind/react';
 const projects = [
   // Components
   {
+    title: 'Stats preview card',
+    description: <>
+    This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+    Access the challenge from <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62" className='underline underline-offset-4'>here</a>
+                          </>,
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://mrjays-stats-preview-card-component.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/stats-preview-card-component',
+    category: 'components',
+    year: 2023,
+    status: 'Completed',
+  },
+  {
     title: '3-column preview card',
     description: <>
     This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
