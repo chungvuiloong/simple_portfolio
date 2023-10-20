@@ -104,13 +104,13 @@ export default function Hero() {
                 id="stars"
                 alt="starts in sky"
                 className="stars blend layer"
-                style={{ top: `${(scrollY * 0.25)}px`, left: `${(scrollY * 0.05)}px`}}
+                style={{ bottom: `${(scrollY * 0.50)}px`}}
             />
             <img
                 src={sun}
                 id="whiteMoon"
                 alt="moon"
-                className="whiteMoon blend"
+                className="whiteMoon blend blur-[10px]"
                 style={{ top: `${(scrollY * 1.25)}px`} }
             />
             <img
