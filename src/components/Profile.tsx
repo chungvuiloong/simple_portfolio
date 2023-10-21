@@ -36,7 +36,10 @@ export default function Profile() {
       }, []);
 
     return (        
-        <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-gradient-to-b from-[#ffb23c] to-[#00dcda]  dark:bg-[#00dcda]`}>
+        <section className={`py-24 sm:py-32 px-6 lg:px-10 
+          bg-gradient-to-b from-[#ffb23c] to-[#00dcda]  
+          dark:bg-gradient-to-b dark:from-[#00dcda] dark:to-[#00dcda] 
+        `}>
             <div className='mx-auto container'>
                 <div className="flex flex-row justify-center">
                     <div className="flex flex-col justify-center">                    
