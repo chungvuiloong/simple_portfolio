@@ -10,18 +10,17 @@ import front_island from '../assets/images/frontIsland.png'
 import bottom_cloud_night from '../assets/images/bottomCloud.png'
 import upper_cloud_night from '../assets/images/upperCloud.png'
 
-
-import sunny_sky from '../assets/images/sunny_sky.png'
-import sun from '../assets/images/sun_sunshine_darkrings.png'
-import back_mountains from '../assets/images/backMountains_day.png'
-import sea_day from '../assets/images/sea_day.png'
-import front_island_day from '../assets/images/frontIsland_day.png'
-import bottom_cloud from '../assets/images/bottomCloud_day.png'
-import upper_cloud from '../assets/images/upperCloud_day.png'
-import cloudy from '../assets/images/cloudy.png'
-import DarkModeButton from '../components/DarkModeButton'
+import sunny_sky from '../assets/images/day/sunny_sky.png'
+import sun from '../assets/images/day/sun_sunshine_darkrings.png'
+import back_mountains from '../assets/images/day/backMountains_day.png'
+import sea_day from '../assets/images/day/sea_day.png'
+import front_island_day from '../assets/images/day/frontIsland_day.png'
+import bottom_cloud from '../assets/images/day/bottomCloud_day.png'
+import upper_cloud from '../assets/images/day/upperCloud_day.png'
+import cloudy from '../assets/images/day/cloudy.png'
+import DarkModeButton from '../../../components/DarkModeButton'
 import useLocalStorage from 'use-local-storage'
-import { defaultTheme } from '../helpers/theme';
+import { defaultTheme } from '../../../helpers/theme';
 
 
 
@@ -36,7 +35,7 @@ export default function Hero() {
       return () => window.removeEventListener('scroll', handleScroll);
     });
 
-    const SunnyDay = () => {
+    const Day = () => {
         return (
             <>
                 <img
@@ -47,17 +46,17 @@ export default function Hero() {
                 />
                 <img
                     src={cloudy}
-                    id="stars"
-                    alt="starts in sky"
+                    id="cloudy"
+                    alt="Clouds in the sky"
                     className="stars blend layer"
                     style={{ bottom: `${(scrollY * 0.50)}px`}}
                 />
                 <img
                     src={sun}
                     id="whiteMoon"
-                    alt="moon"
-                    className="whiteMoon blend blur-[10px]"
-                    style={{ top: `${(scrollY * 1.25)}px`} }
+                    alt="sun"
+                    className="whiteMoon blend blur-[10px] "
+                    style={{ top: `${((scrollY - 320) * 1.25)}px`} }
                 />
                 <img
                     src={upper_cloud}
@@ -163,9 +162,8 @@ export default function Hero() {
         </div>
 
         <section className="layer-parent" id="heroBanner">
-        {/* <Night /> */}
-        {/* <SunnyDay /> */}
-      </section>
+            {theme === 'dark' ? <Night /> : <Day />}
+        </section>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 
 import './App.css';
 import Footer from './components/Footer';
-import Hero from './components/Hero'
+import Hero from './assets/images/day/Hero'
 import Portfolio from './components/Portfolio';
 import Profile from './components/Profile';
 import Team from './components/Team';
