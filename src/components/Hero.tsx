@@ -19,6 +19,7 @@ import front_island_day from '../assets/images/frontIsland_day.png'
 import bottom_cloud from '../assets/images/bottomCloud_day.png'
 import upper_cloud from '../assets/images/upperCloud_day.png'
 import cloudy from '../assets/images/cloudy.png'
+import DarkModeButton from '../components/DarkModeButton'
 
 export default function Hero() {
     const [scrollY, setScrollY] = useState<number>(0);
@@ -31,9 +32,14 @@ export default function Hero() {
 
   return (
     <>  
-        <section className="p-4 text-white text-4xl text-center">
-            Scroll down to see more
-        </section>
+        <div className='container mx-auto'>
+            <nav className='flex flex-row w-full justify-between'>
+                <div>TEST</div>
+                <div className="p-4 text-white text-4xl ">Scroll down to see more</div>
+                <DarkModeButton />
+            </nav>
+        </div>
+
         <section className="layer-parent" id="heroBanner">
             {/* <h2 className="empty">Empty</h2> */}
             {/* <img
