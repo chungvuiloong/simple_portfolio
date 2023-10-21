@@ -44,7 +44,7 @@ export default function Home() {
       console.log(theme);
     
       return (
-        <div data-theme={theme} className=' text-white self-center rounded-full overflow-hidden'>
+        <div className=' text-white self-center rounded-full overflow-hidden'>
             <button
             type="button"
             className="rounded-full bg-white/90 px-3 py-2.5 shadow-lg backdrop-blur transition"
