@@ -47,12 +47,12 @@ export default function Home() {
         <div data-theme={theme} className=' text-white self-center rounded-full overflow-hidden'>
             <button
             type="button"
-            className="group rounded-full bg-white/90 px-3 py-2.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+            className="rounded-full bg-white/90 px-3 py-2.5 shadow-lg backdrop-blur transition"
             onClick={switchTheme}
             >
                 { theme === 'light' ? 
                     <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition" />
-                    : <MoonIcon className="h-6 w-6 fill-zinc-700 transition dark:block " />
+                    : <MoonIcon className="h-6 w-6 fill-zinc-700 transition" />
                 }
              </button>
         </div>
