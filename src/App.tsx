@@ -1,10 +1,10 @@
 
 import './App.css';
-import Footer from './pages/Footer';
-import Hero from './pages/Hero'
-import Portfolio from './pages/Portfolio';
-import Profile from './pages/Profile';
-import Team from './pages/Team';
+import Footer from './components/Footer';
+import Hero from './components/Hero'
+import Portfolio from './components/Portfolio';
+import Profile from './components/Profile';
+import Team from './components/Team';
 
 function App() {
   return (
