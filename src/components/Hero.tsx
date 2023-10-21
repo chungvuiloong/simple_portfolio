@@ -37,7 +37,7 @@ export default function Hero() {
     <>  
         <div className='container mx-auto'>
             <nav className='flex flex-row w-full justify-between'>
-                <div>TEST</div>
+                <div>{" "}</div>
                 {/* <div className={`p-4 text-4xl text-${theme === 'dark' ? 'black' : 'white'}`}>Scroll down to see more</div> */}
                 <div className={`p-4 text-4xl text-white dark:text-red-600`}>Scroll down to see more</div>
                 <DarkModeButton />
