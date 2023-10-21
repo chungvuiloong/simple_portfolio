@@ -5,6 +5,45 @@ import { Button } from '@material-tailwind/react';
 const projects = [
   // Components
   {
+    title: 'Stats preview card',
+    description: <>
+    This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+    Access the challenge from <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62" className='underline underline-offset-4'>here</a>
+                          </>,
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://mrjays-stats-preview-card-component.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/stats-preview-card-component',
+    category: 'components',
+    year: 2023,
+    status: 'Completed',
+  },
+  {
+    title: '3-column preview card',
+    description: <>
+    This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+    Access the challenge from <a href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-" className='underline underline-offset-4'>here</a>
+                          </>,
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://mrjays-3-column-preview-card-component.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/3-column-preview-card-component',
+    category: 'components',
+    year: 2023,
+    status: 'Completed',
+  },
+  {
+    title: 'Single price grid',
+    description: <>
+    This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+    Access the challenge from <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" className='underline underline-offset-4'>here</a>
+                          </>,
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://mrjays-single-price-grid-component.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/single-price-grid-component',
+    category: 'components',
+    year: 2023,
+    status: 'Completed',
+  },
+  {
     title: 'QR code',
     description: <>
     This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
@@ -30,9 +69,38 @@ const projects = [
     year: 2023,
     status: 'Completed',
   },
+
   // Web Development Projects
   {
-    title: 'Landing Page - Retink Media',
+    title: 'Huddle Landing Page',
+    description:
+      <>
+        This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+        Access the challenge from <a href="https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0" className='underline underline-offset-4'>here</a>
+     </>,
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://mrjays-huddle-landing-page.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/huddle-landing-page',
+    category: 'web',
+    year: 2023,
+    status: 'Completed',
+  },
+  {
+    title: 'News Landing Page',
+    description:
+      <>
+        This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+        Access the challenge from <a href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" className='underline underline-offset-4'>here</a>
+     </>,
+    imageUrl: 'project1.jpg',
+    demoUrl: 'https://mrjays-news-landing-page.vercel.app/',
+    githubUrl: 'https://github.com/jeresulovuo/news-landing-page',
+    category: 'web',
+    year: 2023,
+    status: 'Completed',
+  },
+  {
+    title: 'Retink Media Landing Page',
     description: 'This is the entry task for Retink Media.',
     imageUrl: 'project1.jpg',
     demoUrl: 'https://retink-landingpage.vercel.app/',
@@ -42,7 +110,7 @@ const projects = [
     status: 'Completed',
   },
   {
-    title: 'Landing Page - Liana Technologies',
+    title: 'Liana Technologies Landing Page',
     description: 'This is the entry task for Liana Technologies.',
     imageUrl: 'project1.jpg',
     demoUrl: 'https://lianatechnologylandingpage.vercel.app/',
@@ -51,6 +119,7 @@ const projects = [
     year: 2022,
     status: 'Completed',
   },
+
   // Web application
   {
     title: 'BMI',
