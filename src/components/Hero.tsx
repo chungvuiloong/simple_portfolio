@@ -31,7 +31,7 @@ export default function Hero() {
     });
 
   return (
-    <div className='bg-red-800 dark:bg-blue-700'>  
+    <div className='bg-[#8f81fc] dark:bg-black'>  
         <div className='container mx-auto '>
             <nav className='flex flex-row w-full justify-between'>
                 <div>{" "}</div>
