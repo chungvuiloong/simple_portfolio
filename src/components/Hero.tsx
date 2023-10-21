@@ -20,8 +20,11 @@ import bottom_cloud from '../assets/images/bottomCloud_day.png'
 import upper_cloud from '../assets/images/upperCloud_day.png'
 import cloudy from '../assets/images/cloudy.png'
 import DarkModeButton from '../components/DarkModeButton'
+import useLocalStorage from 'use-local-storage' 
 
 export default function Hero() {
+    const defaultTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const [theme, setTheme] = useLocalStorage('theme', defaultTheme ? 'dark' : 'light');
     const [scrollY, setScrollY] = useState<number>(0);
 
     useEffect(() => {
@@ -35,7 +38,8 @@ export default function Hero() {
         <div className='container mx-auto'>
             <nav className='flex flex-row w-full justify-between'>
                 <div>TEST</div>
-                <div className="p-4 text-white text-4xl ">Scroll down to see more</div>
+                {/* <div className={`p-4 text-4xl text-${theme === 'dark' ? 'black' : 'white'}`}>Scroll down to see more</div> */}
+                <div className={`p-4 text-4xl text-white dark:text-red-600`}>Scroll down to see more</div>
                 <DarkModeButton />
             </nav>
         </div>
