@@ -36,7 +36,7 @@
     }
 
     p {
-    @apply text-base text-gray-500  font-light leading-relaxed;
+    @apply text-base font-light leading-relaxed;
     }
 
     small {
