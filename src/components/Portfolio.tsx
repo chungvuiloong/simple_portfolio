@@ -17,7 +17,7 @@ const projects = [
     category: 'components',
     year: 2023,
     status: 'Completed',
-    technologies: [],
+    technologiesUsed: [],
   },
   {
     title: '3-column preview card',
@@ -32,7 +32,7 @@ const projects = [
     category: 'components',
     year: 2023,
     status: 'Completed',
-    technologies: []
+    technologiesUsed: []
   },
   {
     title: 'Single price grid',
@@ -47,7 +47,7 @@ const projects = [
     category: 'components',
     year: 2023,
     status: 'Completed',
-    technologies: []
+    technologiesUsed: []
   },
   {
     title: 'QR code',
@@ -62,7 +62,7 @@ const projects = [
     category: 'components',
     year: 2023,
     status: 'Completed',
-    technologies: []
+    technologiesUsed: []
   },
   {
     title: 'Order Summary',
@@ -77,7 +77,7 @@ const projects = [
     category: 'components',
     year: 2023,
     status: 'Completed',
-    technologies: []
+    technologiesUsed: []
   },
 
   // Web Development Projects
@@ -95,7 +95,7 @@ const projects = [
     category: 'web',
     year: 2023,
     status: 'Completed',
-    technologies: []
+    technologiesUsed: []
   },
   {
     title: 'News Landing Page',
@@ -111,7 +111,7 @@ const projects = [
     category: 'web',
     year: 2023,
     status: 'Completed',
-    technologies: []
+    technologiesUsed: []
   },
   {
     title: 'Retink Media Landing Page',
@@ -123,7 +123,7 @@ const projects = [
     category: 'web',
     year: 2023,
     status: 'Completed',
-    technologies: []
+    technologiesUsed: []
   },
   {
     title: 'Liana Technologies Landing Page',
@@ -135,7 +135,7 @@ const projects = [
     category: 'web',
     year: 2022,
     status: 'Completed',
-    technologies: []
+    technologiesUsed: []
   },
 
   // Web application
@@ -153,7 +153,7 @@ const projects = [
     category: 'web app',
     year: 2023,
     status: 'Completed',
-    technologies: []
+    technologiesUsed: []
   },
   // {
   //   title: 'Wolt Delivery Fee Calculator',
@@ -176,7 +176,7 @@ const projects = [
     category: 'web app',
     year: 2022,
     status: 'In redesigning progress',
-    technologies: []
+    technologiesUsed: []
   },
 
 // Personal Projects
@@ -200,7 +200,7 @@ const projects = [
     category: 'personal',
     year:2022,
     status: 'In redesigning progress',
-    technologies: [],
+    technologiesUsed: [`React`, `TailwindCSS`, `DaisyUI`],
   },
   {
     title: 'Travel App',
@@ -212,7 +212,7 @@ const projects = [
     category: 'personal',
     year:2022,
     status: 'In redesigning progress',
-    technologies: [],
+    technologiesUsed: [],
   },
 ];
 
