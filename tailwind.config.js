@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'Off-white': '#F5F5F5'
+      },
       fontFamily: {
         'sans': ['Helvetica Neue', 'Open Sans', 'sans-serif'],
       },
