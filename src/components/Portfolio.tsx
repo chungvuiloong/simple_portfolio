@@ -11,11 +11,13 @@ const projects = [
     Access the challenge from <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62" className='underline underline-offset-4'>here</a>
                           </>,
     imageUrl: 'project1.jpg',
+    host: 'Vercel',
     demoUrl: 'https://mrjays-stats-preview-card-component.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/stats-preview-card-component',
     category: 'components',
     year: 2023,
     status: 'Completed',
+    technologies: [],
   },
   {
     title: '3-column preview card',
@@ -24,11 +26,13 @@ const projects = [
     Access the challenge from <a href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-" className='underline underline-offset-4'>here</a>
                           </>,
     imageUrl: 'project1.jpg',
+    host: 'Vercel',
     demoUrl: 'https://mrjays-3-column-preview-card-component.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/3-column-preview-card-component',
     category: 'components',
     year: 2023,
     status: 'Completed',
+    technologies: []
   },
   {
     title: 'Single price grid',
@@ -37,11 +41,13 @@ const projects = [
     Access the challenge from <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" className='underline underline-offset-4'>here</a>
                           </>,
     imageUrl: 'project1.jpg',
+    host: 'Vercel',
     demoUrl: 'https://mrjays-single-price-grid-component.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/single-price-grid-component',
     category: 'components',
     year: 2023,
     status: 'Completed',
+    technologies: []
   },
   {
     title: 'QR code',
@@ -50,11 +56,13 @@ const projects = [
     Access the challenge from <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" className='underline underline-offset-4'>here</a>
                           </>,
     imageUrl: 'project1.jpg',
+    host: 'Vercel',
     demoUrl: 'https://mrjays-qrcode-component.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/qr-code-component',
     category: 'components',
     year: 2023,
     status: 'Completed',
+    technologies: []
   },
   {
     title: 'Order Summary',
@@ -63,11 +71,13 @@ const projects = [
     Access the challenge from <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj" className='underline underline-offset-4'>here</a>
                           </>,
     imageUrl: 'project1.jpg',
+    host: 'Vercel',
     demoUrl: 'https://mrjays-order-summary-component.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/order-summary-component',
     category: 'components',
     year: 2023,
     status: 'Completed',
+    technologies: []
   },
 
   // Web Development Projects
@@ -79,11 +89,13 @@ const projects = [
         Access the challenge from <a href="https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0" className='underline underline-offset-4'>here</a>
      </>,
     imageUrl: 'project1.jpg',
+    host: 'Vercel',
     demoUrl: 'https://mrjays-huddle-landing-page.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/huddle-landing-page',
     category: 'web',
     year: 2023,
     status: 'Completed',
+    technologies: []
   },
   {
     title: 'News Landing Page',
@@ -93,31 +105,37 @@ const projects = [
         Access the challenge from <a href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" className='underline underline-offset-4'>here</a>
      </>,
     imageUrl: 'project1.jpg',
+    host: 'Vercel',
     demoUrl: 'https://mrjays-news-landing-page.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/news-landing-page',
     category: 'web',
     year: 2023,
     status: 'Completed',
+    technologies: []
   },
   {
     title: 'Retink Media Landing Page',
     description: 'This is the entry task for Retink Media.',
     imageUrl: 'project1.jpg',
+    host: 'Vercel',
     demoUrl: 'https://retink-landingpage.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/retink_landingpage',
     category: 'web',
     year: 2023,
     status: 'Completed',
+    technologies: []
   },
   {
     title: 'Liana Technologies Landing Page',
     description: 'This is the entry task for Liana Technologies.',
     imageUrl: 'project1.jpg',
+    host: 'Vercel',
     demoUrl: 'https://lianatechnologylandingpage.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/landingpage_liana_tech',
     category: 'web',
     year: 2022,
     status: 'Completed',
+    technologies: []
   },
 
   // Web application
@@ -129,16 +147,19 @@ const projects = [
     Access the challenge from <a href="https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T" className='underline underline-offset-4'>here </a>
                           </>,
     imageUrl: '',
+    host: 'Vercel',
     demoUrl: 'https://mrjays-bmi-calculator.vercel.app/',
     githubUrl: 'https://github.com/jeresulovuo/bmi_calculator',
     category: 'web app',
     year: 2023,
     status: 'Completed',
+    technologies: []
   },
   // {
   //   title: 'Wolt Delivery Fee Calculator',
   //   description: 'This is the entry task for Wolt in 2023.',
   //   imageUrl: 'project1.jpg',
+  // host: 'Vercel',
   //   demoUrl: 'https://mrjays-wolt-delivery-calculator.vercel.app/',
   //   githubUrl: 'https://github.com/jeresulovuo/Wolt_Delivery_Calculator',
   //   category: 'web app',
@@ -149,11 +170,13 @@ const projects = [
     title: 'Countries App',
     description: 'A web app that display info about countries.',
     imageUrl: 'project1.jpg',
+    host: 'Vercel',
     demoUrl: 'https://countries-basic.vercel.app/',
     githubUrl: 'https://github.com/jirimicvl/countriesBasic/',
     category: 'web app',
     year: 2022,
     status: 'In redesigning progress',
+    technologies: []
   },
 
 // Personal Projects
@@ -168,14 +191,28 @@ const projects = [
   //   status: 'In progress',
   // },
   {
+    title: 'Simple Portfolio',
+    description: 'A simple portfolio to display all the work done.',
+    imageUrl: 'project1.jpg',
+    host: 'Vercel',
+    demoUrl: 'https://mrjays-simple-portfolio.vercel.app/',
+    githubUrl: '#',
+    category: 'personal',
+    year:2022,
+    status: 'In redesigning progress',
+    technologies: [],
+  },
+  {
     title: 'Travel App',
     description: 'Travel App - All in one app for your travel conveniences.',
     imageUrl: 'project1.jpg',
+    host: 'Netlify',
     demoUrl: 'https://mrjaytravelapp.netlify.app/',
     githubUrl: '#',
     category: 'personal',
     year:2022,
     status: 'In redesigning progress',
+    technologies: [],
   },
 ];
 
