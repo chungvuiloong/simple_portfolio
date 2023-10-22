@@ -1,11 +1,12 @@
 import { Typography } from "@material-tailwind/react";
 import React, { ReactNode } from 'react';
 import Iconify from "./Iconify";
-import { Vercel } from "./StatusTag";
+import { HostedBy } from "./StatusTag";
 
 interface Project {
     title?: string;
     description?: string | ReactNode;
+    host?: string;
     imageUrl?: string;
     demoUrl?: string;
     githubUrl?: string;
@@ -17,7 +18,7 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-    const { title, description, imageUrl, demoUrl, githubUrl, status } = project;
+    const { title, description, imageUrl, host, demoUrl, githubUrl, status } = project;
    
     return (
         <div className='card bg-Off-white flex flex-col pl-5 py-3 w-[300px]'>
@@ -27,10 +28,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <div className='mt-2' style={{ height: '-webkit-fill-available'}}>
                 <hr className="h-3 border-t-0 bg-blue-900 rounded-l-lg" />
                 <div className="mt-5 pr-5">
-                    {/* <div className="flex flex-row gap-2">
+                    <div className="flex flex-row gap-2">
                         <Typography className="text-slate-700">Hosted by</Typography>
-                        <Typography><Vercel vercel_link='' /></Typography>
-                    </div> */}
+                        <Typography><HostedBy host={host} link={demoUrl} /></Typography>
+                    </div>
                     <Typography variant='paragraph' className="text-slate-500">
                         {description}
                     </Typography>
