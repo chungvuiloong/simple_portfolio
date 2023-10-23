@@ -41,15 +41,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                         {description}
                     </Typography>
     
-                    <div className="mt-3 flex flex-row flex-wrap gap-x-3 gap-y-1">
+                    <div className="mt-5">
                         {/* <TechnologiesUsed array={technologiesUsed} /> */}
                         <Typography variant='paragraph' className="font-extrabold text-slate-800">Technologies used:</Typography>
-                        {
-                            technologiesUsed?.map((techno, index)=>
-                                <div key={index} className="text-slate-800">
-                                {techno}
-                                </div>
-                        )}
+                        <div className="mt-1 flex flex-row flex-wrap gap-x-3 gap-y-1">                        
+                            {
+                                technologiesUsed?.map((techno, index)=>
+                                    <div key={index} className="text-slate-800">
+                                    {techno}
+                                    </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
