@@ -2,6 +2,8 @@ import { Typography } from "@material-tailwind/react";
 import React, { ReactNode } from 'react';
 import Iconify from "./Iconify";
 import { HostedBy } from "./StatusTag";
+import TechnologiesUsed from "./TechnologiesUsed";
+
 
 interface Project {
     title?: string;
@@ -11,6 +13,7 @@ interface Project {
     demoUrl?: string;
     githubUrl?: string;
     status?: string;
+    technologiesUsed?: string[]
 }
 
 interface ProjectCardProps {
@@ -18,7 +21,7 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-    const { title, description, imageUrl, host, demoUrl, githubUrl, status } = project;
+    const { title, description, imageUrl, host, demoUrl, githubUrl, status, technologiesUsed } = project;
    
     return (
         <div className='card bg-Off-white flex flex-col pl-5 py-3 w-[300px]'>
@@ -29,12 +32,25 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <hr className="h-3 border-t-0 bg-blue-900 rounded-l-lg" />
                 <div className="mt-5 pr-5">
                     <div className="flex flex-row gap-2">
-                        <Typography className="text-slate-700">Hosted by</Typography>
-                        <Typography><HostedBy host={host} link={demoUrl} /></Typography>
+                        <Typography variant='paragraph' className="text-slate-800">Hosted by</Typography>
+                        <div>
+                            <HostedBy host={host} link={demoUrl} />
+                        </div>
                     </div>
                     <Typography variant='paragraph' className="text-slate-500">
                         {description}
                     </Typography>
+    
+                    <div className="mt-3 flex flex-row flex-wrap gap-x-3 gap-y-1">
+                        {/* <TechnologiesUsed array={technologiesUsed} /> */}
+                        <Typography variant='paragraph' className="font-extrabold text-slate-800">Technologies used:</Typography>
+                        {
+                            technologiesUsed?.map((techno, index)=>
+                                <div key={index} className="text-slate-800">
+                                {techno}
+                                </div>
+                        )}
+                    </div>
                 </div>
             </div>
             <div className="mt-5 pr-5 flex justify-between">
@@ -49,7 +65,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
                 {
                     githubUrl !== undefined ?         
-                        <a href={githubUrl}>
+                        <a href={githubUrl}                     
+                            target="_blank"
+                            rel="noopener noreferrer">
                             <div className="btn btn-neutral flex gap-2 w-fit h-fit">
                                 <Iconify icon="icomoon-free:github" className="text-white" />
                                 <Typography variant="small" color="white">GitHub</Typography>
