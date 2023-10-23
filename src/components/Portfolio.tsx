@@ -17,7 +17,7 @@ const projects = [
     category: 'components',
     year: 2023,
     status: 'Completed',
-    technologiesUsed: [],
+    technologiesUsed: ['HTML', 'TailwindCSS', 'Javascript'],
   },
   {
     title: '3-column preview card',
@@ -32,7 +32,7 @@ const projects = [
     category: 'components',
     year: 2023,
     status: 'Completed',
-    technologiesUsed: []
+    technologiesUsed: ['Next.js', 'React', 'TailwindCSS', 'HTML', 'Javascript']
   },
   {
     title: 'Single price grid',
@@ -47,7 +47,7 @@ const projects = [
     category: 'components',
     year: 2023,
     status: 'Completed',
-    technologiesUsed: []
+    technologiesUsed: ['Next.js', 'React', 'TailwindCSS', 'HTML', 'Javascript']
   },
   {
     title: 'QR code',
@@ -62,7 +62,7 @@ const projects = [
     category: 'components',
     year: 2023,
     status: 'Completed',
-    technologiesUsed: []
+    technologiesUsed: ['Next.js', 'React', 'TailwindCSS', 'Material Tailwind' , 'HTML']
   },
   {
     title: 'Order Summary',
@@ -77,7 +77,7 @@ const projects = [
     category: 'components',
     year: 2023,
     status: 'Completed',
-    technologiesUsed: []
+    technologiesUsed:  ['TailwindCSS', 'Material Tailwind' , 'HTML']
   },
 
   // Web Development Projects
@@ -95,7 +95,7 @@ const projects = [
     category: 'web',
     year: 2023,
     status: 'Completed',
-    technologiesUsed: []
+    technologiesUsed: ['TailwindCSS', 'HTML']
   },
   {
     title: 'News Landing Page',
@@ -111,7 +111,7 @@ const projects = [
     category: 'web',
     year: 2023,
     status: 'Completed',
-    technologiesUsed: []
+    technologiesUsed: ['Next.js', 'React', 'Javascript', 'TailwindCSS', 'HTML']
   },
   {
     title: 'Retink Media Landing Page',
@@ -123,7 +123,7 @@ const projects = [
     category: 'web',
     year: 2023,
     status: 'Completed',
-    technologiesUsed: []
+    technologiesUsed:['React', 'Javascript','HTML', 'Bootstrap']
   },
   {
     title: 'Liana Technologies Landing Page',
@@ -135,7 +135,7 @@ const projects = [
     category: 'web',
     year: 2022,
     status: 'Completed',
-    technologiesUsed: []
+    technologiesUsed: ['React', 'Javascript', 'HTML', 'Bootstrap', 'RSS']
   },
 
   // Web application
@@ -153,7 +153,7 @@ const projects = [
     category: 'web app',
     year: 2023,
     status: 'Completed',
-    technologiesUsed: []
+    technologiesUsed: ['Next.js', 'TailwindCSS', 'Javascript', 'HTML']
   },
   // {
   //   title: 'Wolt Delivery Fee Calculator',
@@ -176,7 +176,7 @@ const projects = [
     category: 'web app',
     year: 2022,
     status: 'In redesigning progress',
-    technologiesUsed: []
+    technologiesUsed: ['React', 'Redux', 'Javascript', 'RESTful API']
   },
 
 // Personal Projects
@@ -200,7 +200,7 @@ const projects = [
     category: 'personal',
     year:2022,
     status: 'In redesigning progress',
-    technologiesUsed: [`React`, `TailwindCSS`, `DaisyUI`],
+    technologiesUsed: ['React', 'TailwindCSS', 'Javascript', 'DaisyUI', 'HTML'],
   },
   {
     title: 'Travel App',
@@ -212,7 +212,7 @@ const projects = [
     category: 'personal',
     year:2022,
     status: 'In redesigning progress',
-    technologiesUsed: [],
+    technologiesUsed: ['React', 'Javascript', 'Material UI', 'Redux', 'Bootstrap', 'RESTful API'],
   },
 ];
 
