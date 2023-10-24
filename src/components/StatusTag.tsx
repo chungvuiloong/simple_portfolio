@@ -35,8 +35,8 @@ export const HostedBy = ({ host, link }:{ host?:string, link?:string }) => {
 
     return (
         <div>
-            <a href={link} className='badge bg-slate-300 py-2 gap-2'>
-                { link ? <Iconify icon={host_logo} className='' /> : <div className='text-black'>None</div>}
+            <a href={link} className='badge bg-slate-300 py-4 px-3 gap-3'>
+                { link ? <Iconify icon={host_logo} className='h-[20px] w-auto' /> : <div className='text-black'>None</div>}
                 <span className="relative flex h-3 w-3">
                     <span className={`animate-ping absolute inline-flex h-full w-full rounded-full ${color} opacity-75`}></span>
                     <span className={`relative inline-flex rounded-full h-3 w-3 ${color}`}></span>
