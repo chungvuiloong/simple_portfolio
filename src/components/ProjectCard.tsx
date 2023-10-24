@@ -32,15 +32,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <hr className="h-3 border-t-0 bg-blue-900 rounded-l-lg" />
                 <div className="mt-5 pr-5">
                     <div className="flex flex-row gap-2">
-                        <Typography variant='paragraph' className="text-slate-800">Hosted by</Typography>
-                        <div>
-                            <HostedBy host={host} link={demoUrl} />
-                        </div>
+                        <Typography variant='paragraph' className="text-slate-800 self-center">Hosted by</Typography>
+                        <HostedBy host={host} link={demoUrl} />
                     </div>
                     <Typography variant='paragraph' className="text-slate-500">
                         {description}
                     </Typography>
-    
                     <div className="mt-5">
                         {/* <TechnologiesUsed array={technologiesUsed} /> */}
                         <Typography variant='paragraph' className="font-extrabold text-slate-800">Technologies used:</Typography>
