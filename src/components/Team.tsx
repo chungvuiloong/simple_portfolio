@@ -4,14 +4,14 @@ import { Typography } from "@material-tailwind/react"
 
 const people = [
     {
-        name: 'Jere Sulovuo',
+        name: 'Jere / Chung Vui Loong',
         role: 'Aspiring v-shaped programmer',
         company: 'Our company',
         imageUrl:
             '',
         twitterUrl: '#',
-        linkedinUrl: 'https://www.linkedin.com/in/jeresulovuo/',
-        githubUrl: 'https://github.com/jeresulovuo',
+        linkedinUrl: 'https://www.linkedin.com/in/chungvuiloong/',
+        githubUrl: 'https://github.com/chungvuiloong',
     },
     {
         name: 'Your name',
@@ -59,9 +59,9 @@ const people = [
         <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
           <div className="mx-auto max-w-2xl">
 			<Typography variant='h2' color='white'>Meet our team</Typography>
-			<Typography variant='paragraph' className="mt-4 text-lg leading-8 text-gray-400"> 
+			{/* <Typography variant='paragraph' className="mt-4 text-lg leading-8 text-gray-400"> 
 				We’re ( yes, we ! you are part of our future team), a dynamic group of individuals who are passionate about what we do.
-           </Typography>
+           </Typography> */}
           </div>
           <ul
             className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
@@ -70,8 +70,8 @@ const people = [
               <li key={person.name} className="rounded-2xl bg-gray-800 px-8 py-10">
                 {/* <img className="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src={person.imageUrl} alt="" /> */}
                 <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-white">{person.name}</h3>
-                <p className="text-sm leading-6 text-gray-400">{person.role}</p>
-                <p className="text-sm leading-6 text-gray-400">{person.company}</p>
+                {/* <p className="text-sm leading-6 text-gray-400">{person.role}</p>
+                <p className="text-sm leading-6 text-gray-400">{person.company}</p> */}
                 <ul className="mt-6 flex justify-center gap-x-6">
                   <li>
                     <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-300">
