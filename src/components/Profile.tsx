@@ -47,7 +47,7 @@ export default function Profile() {
                             Ready to dive in?
                         </Typography>
                       <Typography variant="h4" color="white" className="mt-6 text-left">
-                          Hi there ! I am Chung Vui Loong. (Prefered name: Jere)<br/>
+                          Hi there ! I am Vui Loong "Jere" Chung.<br/>
                           An aspiring V-shaped programmer<br /> 
                           who has strong passion in<br /> 
                           <span className={fadeProp.fade} style={{ color: 'var(--ext-dark-blue-01)' }}>
