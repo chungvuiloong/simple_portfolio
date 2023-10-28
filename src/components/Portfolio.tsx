@@ -5,6 +5,21 @@ import { Button } from '@material-tailwind/react';
 const projects = [
   // Components
   {
+    title: 'Product preview card',
+    description: <>
+    This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+    Access the challenge from <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" className='underline underline-offset-4'>here</a>
+                          </>,
+    imageUrl: 'project1.jpg',
+    host: 'Vercel',
+    demoUrl: 'https://mrjays-product-preview-card-component-main.vercel.app/',
+    githubUrl: 'https://github.com/chungvuiloong/product-preview-card-component-main',
+    category: 'components',
+    year: 2023,
+    status: 'Completed',
+    technologiesUsed: ['HTML', 'TailwindCSS'],
+  },
+  {
     title: 'Stats preview card',
     description: <>
     This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
