@@ -55,10 +55,6 @@ export default function Profile() {
                               {INTERESTS[wordOrder]}
                           </span>
                       </Typography>
-                      <Typography variant="h4" color="white" className="mt-6 text-left">
-                        Test
-
-                      </Typography>
                     </div>
                 </div>
             </div>
