@@ -40,7 +40,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     </Typography>
                     <div className="mt-5">
                         {/* <TechnologiesUsed array={technologiesUsed} /> */}
-                        <Typography variant='paragraph' className="font-extrabold text-slate-800">Technologies used:</Typography>
+                        <Typography variant='paragraph' className="font-extrabold text-slate-800">Built with:</Typography>
                         <div className="mt-1 flex flex-row flex-wrap gap-x-3 gap-y-1">                        
                             {
                                 technologiesUsed?.map((techno, index)=>
