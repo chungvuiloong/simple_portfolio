@@ -155,9 +155,11 @@ export default function Hero() {
     <div className='bg-[#8f81fc] dark:bg-black'>  
         <div className='container mx-auto '>
             <nav className='flex flex-row w-full justify-between'>
-                <div>{" "}</div>
-                <div className={`p-4 text-4xl text-white`}>Scroll down to see more</div>
-                <DarkModeButton />
+                <div className='lg:block hidden'>{" "}</div>
+                <div className={`p-4 w-fit md:text-4xl text-xl text-white break-words`}>Scroll down to see more</div>
+               <div className='self-center pr-5'>
+                    <DarkModeButton />
+                </div>
             </nav>
         </div>
 
