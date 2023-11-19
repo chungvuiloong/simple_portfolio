@@ -8,7 +8,7 @@ const INTERESTS = [
     `UX/ UI`,
     `Service Design`,
     `Front-end development`,
-    `Back-end develoment`,
+    `Back-end development`,
     `Cloud engineering`,
 ];
 
