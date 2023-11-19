@@ -305,7 +305,7 @@ interface PortfolioTabProps {
         <section className='py-24 sm:py-32 px-6 lg:px-10' style={{ backgroundColor: '#00dcda' }} >
             <div className='mx-auto container'>
                 <div className='lg:flex lg:items-center gap-10'>
-                     <h2 className='tracking-tight xl:text-[20rem] lg:text-[13rem] md:text-[10rem] text-[8rem] break-words
+                     <h2 className='tracking-tight xl:text-[20rem] lg:text-[13rem] md:text-[10rem] text-[6rem] break-words
                         font-sans font-500'  
                         style={{ color: 'var(--ext-dark-blue-01)' }}
                     >
