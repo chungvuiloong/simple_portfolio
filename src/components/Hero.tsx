@@ -1,5 +1,6 @@
 import './style.css'
 import React, { useState, useEffect } from 'react';
+import { Icon } from '@iconify/react';
 import dark_sky from '../assets/images/night/darkSky.png'
 import stars_sky from '../assets/images/night/stars.png'
 import left_meteor from '../assets/images/night/meteorLeft.png'
@@ -156,7 +157,10 @@ export default function Hero() {
         <div className='container mx-auto '>
             <nav className='flex flex-row w-full justify-between'>
                 <div className='lg:block hidden'>{" "}</div>
-                <div className={`p-4 w-fit md:text-4xl text-xl text-white break-words`}>Scroll down to see more</div>
+                <div className={`flex flex-row gap-3 p-4 w-fit md:text-4xl text-xl text-white break-words`}>
+                    <Icon icon="ei:arrow-down" className='animate-bounce self-center h-[50px] w-[50px]'/>
+                    Scroll down to see more
+                </div>
                <div className='self-center pr-5'>
                     <DarkModeButton />
                 </div>
