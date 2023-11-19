@@ -44,7 +44,7 @@ export default function Profile() {
             <div className='mx-auto container'>
                 <div className="flex flex-row justify-center">
                     <div className="flex flex-col justify-center">                    
-                        <Typography variant="h2" style={{ color: 'var(--ext-dark-blue-01)' }} className="text-left">
+                        <Typography variant="h2" style={{ color: 'var(--ext-dark-blue-01)' }} className="text-left md:text-[20rem] text-7xl">
                             Ready to dive in?
                         </Typography>
                       <Typography variant="h4" color="white" className="mt-6 text-left">
