@@ -43,18 +43,21 @@ export default function Profile() {
         `}>
             <div className='mx-auto container'>
                 <div className="flex flex-row justify-center">
-                    <div className="flex flex-col justify-center">                    
+                    <div className="flex flex-col">                    
                         <Typography variant="h2" style={{ color: 'var(--ext-dark-blue-01)' }} className="text-left md:text-[20rem] text-7xl ">
                             Ready to dive in?
                         </Typography>
-                      <Typography variant="h4" color="white" className="mt-6 text-left md:text-8xl text-md">
-                          Hi there ! I am "Jere" Vui Loong Chung.
-                          A front-end expert
-                          who has strong passion in {""}
-                          <span className={fadeProp.fade} style={{ color: 'var(--ext-dark-blue-01)' }}>
-                              {INTERESTS[wordOrder]}
-                          </span>
-                      </Typography>
+                        <div>
+                          <Typography variant="h4" color="white" className="mt-6 text-left md:text-8xl text-md">
+                            Hi there ! <br />
+                            I am "Jere" Vui Loong Chung. <br />
+                            A front-end expert who has strong passion in {""}<br/>
+                            <span className={fadeProp.fade} style={{ color: 'var(--ext-dark-blue-01)' }}>
+                                {INTERESTS[wordOrder]}
+                            </span>
+                          </Typography>
+                        </div>
+
                     </div>
                 </div>
             </div>
