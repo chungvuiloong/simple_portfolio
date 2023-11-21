@@ -1,4 +1,5 @@
 import React from 'react';
+import Spline from '@splinetool/react-spline';
 
 const Splinter = () => {
     return (
@@ -9,7 +10,7 @@ const Splinter = () => {
             >
                 Splinter
             </h2>
-            
+            <Spline scene="https://prod.spline.design/GLErkvWSW79m5Ro6/scene.splinecode" />
         </section>
     );
 };
