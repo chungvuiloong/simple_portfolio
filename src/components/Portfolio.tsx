@@ -306,10 +306,10 @@ interface PortfolioTabProps {
             <div className='mx-auto container'>
                 <div className='lg:flex lg:items-center gap-10'>
                      <h2 className='tracking-tight xl:text-[20rem] lg:text-[13rem] md:text-[10rem] text-[6rem] break-words
-                        font-sans font-500'  
+                        font-sans font-500 md:leading-[16rem] leading-[5rem]'  
                         style={{ color: 'var(--ext-dark-blue-01)' }}
                     >
-                    Portfolio
+                    Port<span className='sm:hidden'><br /></span>folio
                     </h2>
                     <PortfolioTab
                         categories={categories}
