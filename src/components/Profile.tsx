@@ -52,7 +52,7 @@ export default function Profile() {
                           <Typography variant="h4" color="white" className="mt-6 text-left md:text-8xl text-md">
                             Hi there ! <br />
                             I am "Jere" Vui Loong Chung. <br />
-                            A front-end expert who has strong passion in {""}<br/>
+                            A developer who has strong passion in {""}<br/>
                             <span className={fadeProp.fade} style={{ color: 'var(--ext-dark-blue-01)' }}>
                                 {INTERESTS[wordOrder]}
                             </span>
