@@ -14,12 +14,12 @@ function App() {
 
   return (
     <div className={theme}>
-        <Hero />
+        {/* <Hero /> */}
         <Profile />
         <Portfolio />
         {/* <Team /> */}
         {/* <Footer /> */}
-        <Splinter />
+        {/* <Splinter /> */}
     </div>
   );
 }

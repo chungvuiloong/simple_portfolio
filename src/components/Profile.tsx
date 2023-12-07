@@ -37,17 +37,19 @@ export default function Profile() {
       }, []);
 
     return (        
-        <section className={`py-24 sm:py-32 px-6 lg:px-10 
-          bg-gradient-to-b from-[#ffb23c] to-[#00dcda]  
-          dark:bg-gradient-to-b dark:from-[#00dcda] dark:to-[#00dcda] 
+        // <section className={`py-24 sm:py-32 px-6 lg:px-10 
+        //   bg-gradient-to-b from-[#ffb23c] to-[#00dcda]  
+        //   dark:bg-gradient-to-b dark:from-[#00dcda] dark:to-[#00dcda] 
+        // `}>
+       <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-gradient-to-b dark:from-[#00dcda] dark:to-[#00dcda] 
         `}>
             <div className='mx-auto container'>
                 <div className="flex flex-row justify-center">
                     <div className="flex flex-col">                    
-                        <Typography variant="h2" style={{ color: 'var(--ext-dark-blue-01)' }} className="text-left md:text-[20rem] text-[6rem] 
+                        {/* <Typography variant="h2" style={{ color: 'var(--ext-dark-blue-01)' }} className="text-left md:text-[20rem] text-[6rem] 
                         md:leading-[16rem] leading-[5rem]">
                             Ready to dive in?
-                        </Typography>
+                        </Typography> */}
                         <div>
                           <Typography variant="h4" color="white" className="mt-6 text-left md:text-8xl text-md">
                             Hi there ! <br />

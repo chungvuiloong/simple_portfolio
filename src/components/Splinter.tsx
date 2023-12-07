@@ -13,6 +13,7 @@ const Splinter = () => {
                 </h2>
                 <div className='flex relative h-[100%] w-[100%]'>
                     <Spline scene="https://prod.spline.design/e5UkyXm-ovTcJuPl/scene.splinecode" />
+                    
                 </div>      
             </div>               
         </section>
