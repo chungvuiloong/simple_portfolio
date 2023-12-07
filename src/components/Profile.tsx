@@ -53,7 +53,7 @@ export default function Profile() {
                               A developer who is passionate about{""}<br/>
                             </Typography>
                           </div>
-                          <Typography variant="h3" className="mt-6 text-left md:text-8xl text-md text-[#00224c]">
+                          <Typography variant="h3" className="mt-6 text-left md:text-8xl text-4xl text-[#00224c]">
                               <span className={fadeProp.fade} >
                                 {INTERESTS[wordOrder]}
                               </span>
