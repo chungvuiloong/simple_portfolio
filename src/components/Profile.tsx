@@ -48,7 +48,7 @@ export default function Profile() {
                     <div className="flex flex-col">
                       <div>
                             <Typography color="white" variant="h3" className="mt-6 text-left md:text-8xl text-6xl">Hi there ! <br /></Typography>
-                            <Typography color="white" variant="h4" className="mt-6 text-left md:text-4xl text-md text-teal-800">                              
+                            <Typography color="white" variant="h4" className="mt-6 text-left md:text-4xl text-md text-black opacity-50">                              
                               I am "Jere" Vui Loong Chung. <br />
                               A developer who is passionate about{""}<br/>
                             </Typography>
