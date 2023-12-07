@@ -37,12 +37,7 @@ export default function Profile() {
       }, []);
 
     return (        
-        // <section className={`py-24 sm:py-32 px-6 lg:px-10 
-        //   bg-gradient-to-b from-[#ffb23c] to-[#00dcda]  
-        //   dark:bg-gradient-to-b dark:from-[#00dcda] dark:to-[#00dcda] 
-        // `}>
-       <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-gradient-to-b from-[#00dcda] to-[#00dcda] 
-        `}>
+       <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-gradient-to-b from-[#00dcda] to-[#00dcda] `}>
             <div className='mx-auto container'>
                 <div className="flex flex-row justify-start">
                     <div className="flex flex-col">
@@ -58,29 +53,6 @@ export default function Profile() {
                                 {INTERESTS[wordOrder]}
                               </span>
                             </Typography>                    
-                        {/* <Typography variant="h2" style={{ color: 'var(--ext-dark-blue-01)' }} className="text-left md:text-[20rem] text-[6rem] 
-                        md:leading-[16rem] leading-[5rem]">
-                            Ready to dive in?
-                        </Typography> */}
-
-
-
-
-
-                        {/* <div>
-                          <div>
-                            <Typography color="white" variant="h3" className="mt-6 text-left md:text-8xl text-md">Hi there ! <br /></Typography>
-                            <Typography color="white" variant="h4" className="mt-6 text-left md:text-4xl text-md text-neutral-600">                              
-                              I am "Jere" Vui Loong Chung. <br />
-                              A developer who is passionate about{""}<br/>
-                            </Typography>
-                          </div>
-                          <Typography variant="h3" className="mt-6 text-left md:text-8xl text-md text-[#00224c]">
-                              <span className={fadeProp.fade} >
-                                {INTERESTS[wordOrder]}
-                              </span>
-                            </Typography>
-                        </div> */}
                     </div>
                 </div>
             </div>
