@@ -97,6 +97,22 @@ const projects = [
 
   // Web Development Projects
   {
+    title: 'Workit Landing Page',
+    description:
+      <>
+        This is a challenge from <a href="https://www.frontendmentor.io/" className='underline underline-offset-4'>Frontend Mentor</a>.
+        Access the challenge from <a href="https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu" className='underline underline-offset-4'>here</a>
+     </>,
+    imageUrl: 'project1.jpg',
+    host: 'Vercel',
+    demoUrl: 'https://mrjays-workit-landing-page.vercel.app/',
+    githubUrl: '',
+    category: 'web',
+    year: 2023,
+    status: 'Completed',
+    technologiesUsed: ['Next.js', 'TailwindCSS', 'Spline', "HeyGen", 'HTML']
+  },
+  {
     title: 'EasyBank Landing Page',
     description:
       <>
