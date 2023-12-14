@@ -61,9 +61,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     >
                     See more
                 </a>
-
                 {
-                    githubUrl !== undefined && githubUrl ?         
+                    githubUrl !== undefined && githubUrl !== "" ?         
                         <a href={githubUrl}                     
                             target="_blank"
                             rel="noopener noreferrer">
