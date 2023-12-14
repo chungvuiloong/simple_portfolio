@@ -63,11 +63,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 </a>
 
                 {
-                    githubUrl !== undefined ?         
+                    githubUrl !== undefined && githubUrl ?         
                         <a href={githubUrl}                     
                             target="_blank"
                             rel="noopener noreferrer">
-                            <div className="btn btn-neutral flex gap-2 w-fit h-fit">
+                            <div className={`btn btn-neutral flex gap-2 w-fit h-fit`}>
                                 <Iconify icon="icomoon-free:github" className="text-white" />
                                 <Typography variant="small" color="white">GitHub</Typography>
                             </div>
