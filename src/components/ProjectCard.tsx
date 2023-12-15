@@ -59,7 +59,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     rel="noopener noreferrer"
                     className="my-auto text-blue-500 hover:text-blue-700"
                     >
-                    See more
+                    Live Demo
                 </a>
                 {
                     githubUrl !== undefined && githubUrl !== "" ?         
