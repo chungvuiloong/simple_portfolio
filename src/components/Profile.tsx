@@ -37,12 +37,12 @@ export default function Profile() {
       }, []);
 
     return (        
-       <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-gradient-to-b from-[#00dcda] to-[#00dcda] `}>
+       <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-[#00dcda]`}>
             <div className='mx-auto container'>
                 <div className="flex flex-row justify-start">
                     <div className="flex flex-col">
                       <div>
-                            <Typography color="white" variant="h3" className="mt-6 text-left md:text-8xl text-6xl">Hi there ! <br /></Typography>
+                            <Typography color="white" variant="h3" className="mt-6 xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem]">Hi there!<br /></Typography>
                             <Typography color="white" variant="h4" className="mt-6 text-left md:text-4xl text-md text-black opacity-50">                              
                               I am "Jere" Vui Loong Chung. <br />
                               A developer who is passionate about{""}<br/>
