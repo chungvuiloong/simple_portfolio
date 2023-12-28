@@ -281,7 +281,7 @@ interface PortfolioTabProps {
             key={category.id}
             className={`px-4 py-2 rounded-lg ${
               activeCategory === category.id
-                ? 'bg-blue-900 text-white'
+                ? 'bg-[#00224c] text-white'
                 : 'bg-gray-200 text-black-700'
             }`}
             onClick={() => onChangeCategory(category.id)}
