@@ -322,9 +322,9 @@ interface PortfolioTabProps {
             <div className='mx-auto container'>
                 <div className='mb-10 flex lg:items-center gap-10'>
                      <h2 className='xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] break-words
-                        font-sans font-500 md:leading-[16rem] leading-[5rem] text-[#00224c] self-center'
+                        font-sans font-500 md:leading-[16rem] leading-[5rem] text-[#00224c] self-center tracking-tighter'
                     >
-                    Port<span className='sm:hidden'><br /></span>folio
+                    Po<span className='tracking-wider'>rt</span><span className='sm:hidden'><br /></span>folio
                     </h2>
                     <div className='self-center'>                    
                       <PortfolioTab
