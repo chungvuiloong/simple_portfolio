@@ -275,14 +275,14 @@ interface PortfolioTabProps {
     activeCategory,
   }) => {
     return (
-      <div className='flex flex-col'>
+      <div className='flex flex-col border-l-4 border-l-[#00224c]'>
         {categories.map((category) => (
           <Button
             key={category.id}
-            className={`px-4 py-2 rounded-lg ${
+            className={`px-4 py-2 rounded-tl-none rounded-bl-none ${
               activeCategory === category.id
                 ? 'bg-[#00224c] text-white'
-                : 'bg-gray-200 text-black-700'
+                : 'bg-inherit text-[#00224c]'
             }`}
             onClick={() => onChangeCategory(category.id)}
           >
