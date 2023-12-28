@@ -37,7 +37,7 @@ export default function Profile() {
       }, []);
 
     return (        
-       <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-[#00dcda]`}>
+       <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-[#00dcda] h-svh`}>
             <div className='mx-auto container'>
                 <div className="flex flex-row justify-start">
                     <div className="flex flex-col">
