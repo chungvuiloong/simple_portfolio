@@ -8,6 +8,7 @@ import Team from './components/Team';
 import useLocalStorage from 'use-local-storage'
 import { defaultTheme } from './helpers/theme';
 import Splinter from './components/Splinter';
+import Contact from './components/Contact';
 
 function App() {
     const [theme] = useLocalStorage('theme', defaultTheme ? 'dark' : 'light');
@@ -17,6 +18,7 @@ function App() {
         {/* <Hero /> */}
         <Profile />
         <Portfolio />
+        <Contact />
         {/* <Team /> */}
         {/* <Footer /> */}
         {/* <Splinter /> */}
