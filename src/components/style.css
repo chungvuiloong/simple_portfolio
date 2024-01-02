@@ -20,23 +20,23 @@
   --ext-blue-01: #00b8bd;
   --ext-blue-02: #4faeff;
   --ext-blue-03: #3977b7;
-  --ext-blue-04: #12d5f0; 
+  --ext-blue-04: #12d5f0;
   --ext-grey: #cecde7;
   --ext-dark-grey: #435066;
 
   --ext-white: #ffffff;
   /* Dark blue */
-  --blue1: #006091; 
+  --blue1: #006091;
   --black: black;
   --white: white;
 
   /* Background */
   --blueBackground1: #00dcda;
   --blueBackground2: #039bca;
-  --blueBackground3: #1F67B5;
-  --blueBackground4: #224AA7;
+  --blueBackground3: #1f67b5;
+  --blueBackground4: #224aa7;
   --blueBackground5: #202095;
-  --blueBackground6: #0B0980;
+  --blueBackground6: #0b0980;
 
   /* Font size */
   --titleFontSize: 4.5em;

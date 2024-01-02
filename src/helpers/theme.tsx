@@ -1,1 +1,3 @@
-export const defaultTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+export const defaultTheme = window.matchMedia(
+  "(prefers-color-scheme: dark)",
+).matches;
