@@ -62,7 +62,7 @@ export default function Profile() {
             </div>
             <Typography
               variant="h2"
-              className="mt-6 text-left md:text-8xl text-4xl text-[#00224c]"
+              className="text-left md:text-8xl text-4xl text-[#00224c]"
             >
               <span className={fadeProp.fade}>{INTERESTS[wordOrder]}</span>
             </Typography>
