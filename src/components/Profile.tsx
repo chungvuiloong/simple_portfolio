@@ -42,13 +42,13 @@ export default function Profile() {
                 <div className="flex flex-row justify-start">
                     <div className="flex flex-col">
                       <div>
-                            <Typography color="white" variant="h3" className="mt-6 xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] tracking-tighter">Hi there!<br /></Typography>
+                            <Typography color="white" variant="h1" className="mt-6 xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] tracking-tighter">Hi there!<br /></Typography>
                             <Typography color="white" variant="paragraph" className="mt-6 text-left md:text-4xl text-md text-black opacity-50">                              
                               I am "Jere" Vui Loong Chung. <br />
                               A developer who is passionate about{""}<br/>
                             </Typography>
                           </div>
-                          <Typography variant="h3" className="mt-6 text-left md:text-8xl text-4xl text-[#00224c]">
+                          <Typography variant="h2" className="mt-6 text-left md:text-8xl text-4xl text-[#00224c]">
                               <span className={fadeProp.fade} >
                                 {INTERESTS[wordOrder]}
                               </span>

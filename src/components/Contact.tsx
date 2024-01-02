@@ -10,6 +10,7 @@ const Contact = () => {
                     >
                         Reach Out
                     </h2>
+                    
 
                 </div>
             </div>
