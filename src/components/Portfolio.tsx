@@ -279,7 +279,7 @@ interface PortfolioTabProps {
         {categories.map((category) => (
           <Button
             key={category.id}
-            className={`px-4 py-2 rounded-tl-none rounded-bl-none text-left xl:text-xl lg:text-md text-xs ${
+            className={`px-4 py-2 rounded-tl-none rounded-bl-none rounded-r-3xl text-left xl:text-xl lg:text-md text-xs ${
               activeCategory === category.id
                 ? 'bg-[#00224c] text-white'
                 : 'bg-inherit text-[#00224c]'
