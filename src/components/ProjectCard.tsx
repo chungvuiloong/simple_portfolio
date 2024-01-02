@@ -31,10 +31,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <div className='mt-2' style={{ height: '-webkit-fill-available'}}>
                 <hr className="h-3 border-t-0 bg-blue-900 rounded-l-lg" />
                 <div className="mt-5 pr-5">
-                    <div className="flex flex-row gap-2">
+                    {/* <div className="flex flex-row gap-2">
                         <Typography variant='paragraph' className="text-slate-800 self-center">Hosted by</Typography>
                         <HostedBy host={host} link={demoUrl} />
-                    </div>
+                    </div> */}
                     <Typography variant='paragraph' className="text-slate-500">
                         {description}
                     </Typography>
