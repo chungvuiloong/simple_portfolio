@@ -1,5 +1,5 @@
 import SocialMediaTab from "./SocialMediaTab";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+// import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const navigation = {
   main: [
@@ -11,15 +11,15 @@ const navigation = {
     //   { name: 'Accessibility', href: '#' },
     //   { name: 'Partners', href: '#' },
   ],
-  socialIcons: [
-    { name: "Facebook", href: "https://www.facebook.com/", icon: FaFacebook },
-    {
-      name: "Instagram",
-      href: "https://www.instagram.com/",
-      icon: FaInstagram,
-    },
-    { name: "Twitter", href: "https://twitter.com/", icon: FaTwitter },
-  ],
+//   socialIcons: [
+//     { name: "Facebook", href: "https://www.facebook.com/", icon: FaFacebook },
+//     {
+//       name: "Instagram",
+//       href: "https://www.instagram.com/",
+//       icon: FaInstagram,
+//     },
+//     { name: "Twitter", href: "https://twitter.com/", icon: FaTwitter },
+//   ],
 };
 
 const getCurrentYear = (): number => {
