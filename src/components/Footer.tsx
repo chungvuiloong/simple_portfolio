@@ -1,4 +1,4 @@
-import SocialMediaTab from "./SocialMediaTab";
+// import SocialMediaTab from "./SocialMediaTab";
 // import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const navigation = {

@@ -1,0 +1,22 @@
+---
+
+const getCurrentYear = () => {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  return currentYear
+};
+
+const year = getCurrentYear()
+
+--- 
+
+    <footer class=`pt-24 sm:pt-32 pb-12 px-6 lg:px-10 bg-[#00dcda] h-svh`>
+      <div class="mx-auto container">
+        <div class="flex flex-row"></div>
+        <p class="w-full text-start leading-5">
+          <span class="text-[#00224c]">
+            &copy; {year} MrJay's || Jere's Journey
+          </span>
+        </p>
+      </div>
+    </footer>
