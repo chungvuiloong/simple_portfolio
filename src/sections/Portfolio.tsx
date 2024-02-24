@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ProjectCard } from "@components/ProjectCard";
+import { computed, signal } from "@preact/signals";
 
 const projects = [
   // Components
@@ -462,22 +463,21 @@ const PortfolioTab: React.FC<PortfolioTabProps> = ({
 };
 
 const Portfolio: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<string>("web");
+    const activeCategory = signal("web");
+    const categories = [
+        { id: "web", label: "Web Development" },
+        { id: "web app", label: "Web Application" },
+        { id: "components", label: "Components" },
+        { id: "personal", label: "Personal Projects" },
+    ];
 
-  const categories = [
-    { id: "web", label: "Web Development" },
-    { id: "web app", label: "Web Application" },
-    { id: "components", label: "Components" },
-    { id: "personal", label: "Personal Projects" },
-  ];
+    const filteredProjects = projects.filter((project) => project.category === activeCategory.value);
 
-  const filteredProjects = projects.filter(
-    (project) => project.category === activeCategory,
-  );
-
-  const handleCategoryChange = (category: string) => {
-    setActiveCategory(category);
-  };
+    const handleCategoryChange = (category: string) => {
+        const setActiveCategory = computed(() => `${category}`);
+        console.log(activeCategory);
+        return setActiveCategory;
+    };
 
   return (
     <section
