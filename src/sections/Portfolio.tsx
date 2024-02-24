@@ -11,6 +11,7 @@ const projects = [
         <a
           href="https://www.frontendmentor.io/"
           className="underline underline-offset-4"
+          target="_blank"
         >
           Frontend Mentor
         </a>
@@ -18,6 +19,7 @@ const projects = [
         <a
           href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
           className="underline underline-offset-4"
+          target="_blank"
         >
           here
         </a>
@@ -195,6 +197,7 @@ const projects = [
         <a
           href="https://www.frontendmentor.io/"
           className="underline underline-offset-4"
+          target="_blank"
         >
           Frontend Mentor
         </a>
@@ -202,6 +205,7 @@ const projects = [
         <a
           href="https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu"
           className="underline underline-offset-4"
+          target="_blank"
         >
           here
         </a>
@@ -464,13 +468,7 @@ const Portfolio: React.FC = () => {
     { id: "web", label: "Web Development" },
     { id: "web app", label: "Web Application" },
     { id: "components", label: "Components" },
-    //   { id: 'mobile', label: 'Mobile Development' },
-    //   { id: 'data', label: 'Data Science and Analysis' },
-    //   { id: 'software', label: 'Software Development' },
-    //   { id: 'open-source', label: 'Open-source Contributions' },
     { id: "personal", label: "Personal Projects" },
-    //   { id: 'freelance', label: 'Freelance or Client Work' },
-    //   { id: 'hackathon', label: 'Hackathon or Competition Projects' },
   ];
 
   const filteredProjects = projects.filter(
