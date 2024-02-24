@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { ProjectCard } from "./ProjectCard";
-// import { Button } from "@material-tailwind/react";
+import { ProjectCard } from "@components/ProjectCard";
 
 const projects = [
   // Components
