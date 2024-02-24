@@ -31,8 +31,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   } = project;
 
   return (
-    <div className="card bg-Off-white flex flex-col pl-5 py-3 w-[300px]">
-        <h3 className="min-h-[70px] flex flex-col-reverse pr-5 text-end text-slate-700">{title}</h3>
+    <div className="bg-Off-white flex flex-col pl-5 py-3 w-[300px]">
+        <h3 className="min-h-[70px] flex flex-col-reverse pr-5 text-end text-slate-700 text-2xl leading-snug">{title}</h3>
         <div className="mt-2" style={{ height: "-webkit-fill-available" }}>
             <hr className="h-3 border-t-0 bg-blue-900 rounded-l-lg" />
             <div className="mt-5 pr-5">
