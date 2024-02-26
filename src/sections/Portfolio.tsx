@@ -463,21 +463,28 @@ const PortfolioTab: React.FC<PortfolioTabProps> = ({
 };
 
 const Portfolio: React.FC = () => {
-    const activeCategory = signal("web");
+    const [activeCategory, setActiveCategory] = useState<string>("web");
+
     const categories = [
-        { id: "web", label: "Web Development" },
-        { id: "web app", label: "Web Application" },
-        { id: "components", label: "Components" },
-        { id: "personal", label: "Personal Projects" },
+      { id: "web", label: "Web Development" },
+      { id: "web app", label: "Web Application" },
+      { id: "components", label: "Components" },
+      //   { id: 'mobile', label: 'Mobile Development' },
+      //   { id: 'data', label: 'Data Science and Analysis' },
+      //   { id: 'software', label: 'Software Development' },
+      //   { id: 'open-source', label: 'Open-source Contributions' },
+      { id: "personal", label: "Personal Projects" },
+      //   { id: 'freelance', label: 'Freelance or Client Work' },
+      //   { id: 'hackathon', label: 'Hackathon or Competition Projects' },
     ];
-
-    const filteredProjects = projects.filter((project) => project.category === activeCategory.value);
-
+  
+    const filteredProjects = projects.filter(
+      (project) => project.category === activeCategory,
+    );
+  
     const handleCategoryChange = (category: string) => {
-        const setActiveCategory = computed(() => `${category}`);
-        console.log(activeCategory);
-        return setActiveCategory;
-    };
+      setActiveCategory(category);
+    };  
 
   return (
     <section
