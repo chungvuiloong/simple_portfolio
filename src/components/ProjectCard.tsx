@@ -5,7 +5,7 @@ import React from "react";
 
 type Project = {
     title: string;
-    description: string;
+    description: string | JSX.Element;
     imageUrl: string;
     host: string;
     demoUrl: string;
@@ -19,17 +19,8 @@ type Project = {
   }
   
 
-  export const ProjectCard: React.FC<ProjectCardProps> = ({ project }: ProjectCardProps) => {
-  const {
-    title,
-    description,
-    imageUrl,
-    host,
-    demoUrl,
-    githubUrl,
-    status,
-    technologiesUsed,
-  } = project;
+  export const ProjectCard: React.FC<ProjectCardProps> = ({project }: ProjectCardProps) => {
+    const { title, description, imageUrl, host, demoUrl, githubUrl, status, technologiesUsed } = project;
 
   return (
     <div className="bg-Off-white flex flex-col pl-5 py-3 w-[300px]">
