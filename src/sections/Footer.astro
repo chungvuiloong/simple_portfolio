@@ -1,0 +1,21 @@
+---
+
+const getCurrentYear = () => {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  return currentYear
+};
+
+const year = getCurrentYear()
+
+--- 
+
+    <footer class="sm:py-16 py-10 bg-[#00dcda]">
+      <div class="px-4 mx-auto container">
+        <p class="w-full text-start leading-5">
+          <span class="text-[#00224c]">
+            &copy; {year} MrJay's || Jere's Journey
+          </span>
+        </p>
+      </div>
+    </footer>

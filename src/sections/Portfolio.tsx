@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { ProjectCard } from "./ProjectCard";
-import { Button } from "@material-tailwind/react";
+import { ProjectCard } from "@components/ProjectCard";
+import { computed, signal } from "@preact/signals";
 
 const projects = [
   // Components
@@ -12,6 +12,7 @@ const projects = [
         <a
           href="https://www.frontendmentor.io/"
           className="underline underline-offset-4"
+          target="_blank"
         >
           Frontend Mentor
         </a>
@@ -19,6 +20,7 @@ const projects = [
         <a
           href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
           className="underline underline-offset-4"
+          target="_blank"
         >
           here
         </a>
@@ -196,6 +198,7 @@ const projects = [
         <a
           href="https://www.frontendmentor.io/"
           className="underline underline-offset-4"
+          target="_blank"
         >
           Frontend Mentor
         </a>
@@ -203,6 +206,7 @@ const projects = [
         <a
           href="https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu"
           className="underline underline-offset-4"
+          target="_blank"
         >
           here
         </a>
@@ -442,7 +446,7 @@ const PortfolioTab: React.FC<PortfolioTabProps> = ({
   return (
     <div className="flex flex-col border-l-4 border-l-[#00224c]">
       {categories.map((category) => (
-        <Button
+        <button
           key={category.id}
           className={`md:px-6 px-4 py-2 rounded-tl-none rounded-bl-none rounded-r-3xl text-left xl:text-xl lg:text-md text-xs ${
             activeCategory === category.id
@@ -452,35 +456,35 @@ const PortfolioTab: React.FC<PortfolioTabProps> = ({
           onClick={() => onChangeCategory(category.id)}
         >
           {category.label}
-        </Button>
+        </button>
       ))}
     </div>
   );
 };
 
 const Portfolio: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<string>("web");
+    const [activeCategory, setActiveCategory] = useState<string>("web");
 
-  const categories = [
-    { id: "web", label: "Web Development" },
-    { id: "web app", label: "Web Application" },
-    { id: "components", label: "Components" },
-    //   { id: 'mobile', label: 'Mobile Development' },
-    //   { id: 'data', label: 'Data Science and Analysis' },
-    //   { id: 'software', label: 'Software Development' },
-    //   { id: 'open-source', label: 'Open-source Contributions' },
-    { id: "personal", label: "Personal Projects" },
-    //   { id: 'freelance', label: 'Freelance or Client Work' },
-    //   { id: 'hackathon', label: 'Hackathon or Competition Projects' },
-  ];
-
-  const filteredProjects = projects.filter(
-    (project) => project.category === activeCategory,
-  );
-
-  const handleCategoryChange = (category: string) => {
-    setActiveCategory(category);
-  };
+    const categories = [
+      { id: "web", label: "Web Development" },
+      { id: "web app", label: "Web Application" },
+      { id: "components", label: "Components" },
+      //   { id: 'mobile', label: 'Mobile Development' },
+      //   { id: 'data', label: 'Data Science and Analysis' },
+      //   { id: 'software', label: 'Software Development' },
+      //   { id: 'open-source', label: 'Open-source Contributions' },
+      { id: "personal", label: "Personal Projects" },
+      //   { id: 'freelance', label: 'Freelance or Client Work' },
+      //   { id: 'hackathon', label: 'Hackathon or Competition Projects' },
+    ];
+  
+    const filteredProjects = projects.filter(
+      (project) => project.category === activeCategory,
+    );
+  
+    const handleCategoryChange = (category: string) => {
+      setActiveCategory(category);
+    };  
 
   return (
     <section
