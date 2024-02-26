@@ -3,22 +3,23 @@ import React from "react";
 // import { HostedBy } from "./StatusTag.tsx";
 // import TechnologiesUsed from "./TechnologiesUsed";
 
-interface Project {
-  title?: string;
-  description?: string;
-  host?: string;
-  imageUrl?: string;
-  demoUrl?: string;
-  githubUrl?: string;
-  status?: string;
-  technologiesUsed?: string[];
-}
+type Project = {
+    title: string;
+    description: string;
+    imageUrl: string;
+    host: string;
+    demoUrl: string;
+    githubUrl: string;
+    status: string;
+    technologiesUsed: string[];
+  }
+  
+  type ProjectCardProps = {
+    project: Project;
+  }
+  
 
-interface ProjectCardProps {
-  project: Project;
-}
-
-export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  export const ProjectCard: React.FC<ProjectCardProps> = ({ project }: ProjectCardProps) => {
   const {
     title,
     description,
