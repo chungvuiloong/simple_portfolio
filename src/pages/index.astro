@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Portfolio from '@sections/Portfolio';
+import Portfolio from '@sections/Portfolio.tsx';
 import Profile from '@sections/Profile.tsx';
 import Contact from '@sections/Contact.tsx';
 
@@ -9,7 +9,7 @@ import Contact from '@sections/Contact.tsx';
 <Layout title="MrJay's Simple Portfolio">
 	<main>
         <Profile client:idle />
-        <Portfolio />
+        <Portfolio client:idle />
         <Contact />
 	</main>
 </Layout>
