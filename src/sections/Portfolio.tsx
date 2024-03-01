@@ -409,7 +409,7 @@ const projects = [
     category: "personal",
     year: 2022,
     status: "In redesigning progress",
-    technologiesUsed: ["Test", "Astro", "React", "TailwindCSS", "Javascript", "HTML"],
+    technologiesUsed: ["Astro", "React", "TailwindCSS", "Javascript", "HTML"],
   },
   {
     title: "Travel App",
