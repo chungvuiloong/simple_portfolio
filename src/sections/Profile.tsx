@@ -4,11 +4,13 @@ import { useEffect, useState } from "react";
 const FADE_INTERVAL_MS = 1500;
 const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2;
 const INTERESTS = [
-  `AI`,
-  `UX / UI`,
-  `Service Design`,
-  `Front-end development`,
-  `Back-end development`,
+    `Front-end development`,
+// `Back-end development`,
+//   `AI`,
+//   `UX / UI`,
+//   `Service Design`,
+//   `Front-end development`,
+//   `Back-end development`,
   `Cloud engineering`,
 ];
 
