@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 
 interface SocialMediaTabProps {
   name: string;
@@ -19,7 +19,7 @@ const SocialMediaTab: React.FC<SocialMediaTabProps> = ({
       className="flex items-center text-black no-underline mr-2"
     >
       <Icon className="w-5 h-5 mr-1" />
-      {/* <span className="text-sm">{name}</span> */}
+      <span className="text-sm">{name}</span>
     </a>
   );
 };
