@@ -492,7 +492,7 @@ const Portfolio: React.FC = () => {
       style={{ backgroundColor: "#00dcda" }}
     >
       <div className="mx-auto container">
-        <div className="mb-10 flex lg:items-center gap-10">
+        <div className="mb-10 flex lg:items-center xl:gap-10 md:gap-5 gap-3">
           <h2
             className="xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] break-words
                         font-sans font-500 md:leading-[16rem] leading-[5rem] text-[#00224c] self-center tracking-tighter"
