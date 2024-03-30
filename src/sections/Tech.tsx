@@ -13,7 +13,7 @@ const skills = [
     },
     {
         "skill": "others",
-        "technologies": [" AWS, Azure", "Firebase", "MongoDB", "PostgreSQL", "MySQL" ]
+        "technologies": ["AWS", "Azure", "Firebase", "MongoDB", "PostgreSQL", "MySQL" ]
     },
 ];
 
@@ -84,9 +84,11 @@ const Tech: React.FC = () => {
         </div>
         <ul className="flex flex-row flex-wrap justify-center mx-auto gap-10">
           {filteredSkill.map((data, index) => (
-            <div>
-                {data.technologies}
-            </div>
+            <>
+                {
+                    data.technologies.map((tech, index) => <li>{tech}</li>)
+                }
+            </>
           ))}
         </ul>
       </div>
