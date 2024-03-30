@@ -3,14 +3,15 @@ import Layout from '../layouts/Layout.astro';
 import Portfolio from '@sections/Portfolio.tsx';
 import Profile from '@sections/Profile.tsx';
 import Contact from '@sections/Contact.tsx';
-import Tech from '@sections/Tech.astro';
+import Tech from '@sections/Tech.tsx';
 
 ---
 
 <Layout title="MrJay's Simple Portfolio">
 	<main>
         <Profile client:idle />
-        <Tech />
+        <!-- <Tech /> -->
+        <Tech client:idle />
         <Portfolio client:idle />
         <Contact />
 	</main>
