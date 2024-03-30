@@ -468,7 +468,7 @@ const Tech: React.FC = () => {
     const categories = [
       { id: "front", label: "Front-end" },
       { id: "back", label: "Back-end" },
-      { id: "others", label: "Other" },
+      { id: "others", label: "Others" },
     ];
   
     const filteredProjects = projects.filter(
@@ -487,7 +487,7 @@ const Tech: React.FC = () => {
       <div className="mx-auto container">
         <div className="mb-10 flex lg:items-center xl:gap-10 md:gap-5 gap-3">
             <h2  className="xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] break-words
-            font-sans font-500 md:leading-[16rem] leading-[5rem] text-[#00224c] self-center tracking-tighter"
+            font-sans font-500 md:leading-[10rem] leading-[5rem] text-[#00224c] self-center tracking-tighter"
             >Tech Stack</h2>
           <div className="self-center">
             <PortfolioTab
