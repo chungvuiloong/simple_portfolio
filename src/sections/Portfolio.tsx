@@ -335,6 +335,18 @@ const projects = [
 
   // Web application
   {
+    title: "Phonebook",
+    description: "Users can add, delete, and update new contacts via this fullstack phonebook app",
+    imageUrl: "",
+    host: "Vercel",
+    demoUrl: "https://phonebookfullstac.onrender.com/",
+    githubUrl: "",
+    category: "web app",
+    year: 2023,
+    status: "Completed",
+    technologiesUsed: ["React.js", "Node.js", "Javascript", "HTML"],
+  },
+  {
     title: "BMI",
     // description: <>This is a premium challenge from <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. Access the challenge from here https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T</>,
     description: (
