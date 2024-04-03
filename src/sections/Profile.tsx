@@ -41,18 +41,32 @@ export default function Profile() {
   return (
     <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-[#00dcda] h-svh`}>
       <div className="mx-auto container">
-        <div className="flex flex-row justify-start">
-          <div className="flex flex-col">
+        <div className="flex flex-col justify-start">
             <h1 className="text-white mt-6 xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] tracking-tighter">
                 Hi there!<br />
             </h1>
-            <p className="mt-6 text-left md:text-4xl text-md text-black opacity-50">
-                I am "Jere" Vui Loong Chung. <br />A Full-stack developer who is passionate about{""}<br />
-            </p>
-            <h2 className="text-left md:text-8xl text-4xl text-[#00224c]">
-                <span className={fadeProp.fade}>{INTERESTS[wordOrder]}</span>
-            </h2>
-          </div>
+            <div className="flex flex-row">
+                <div className="lg:basis-1/2 basis-none flex flex-col gap-5">
+                    <div>
+                        <p className="text-left xl:text-[1.5rem] lg:text-[1.5rem] md:text-[1.5rem] text-[1rem] text-black opacity-50">
+                            I am "Jere" Vui Loong Chung. <br />A Full-stack developer who is passionate about{""}<br />
+                        </p>
+                        <h2 className="text-left md:text-6xl text-2xl text-[#00224c]">
+                            <span className={fadeProp.fade}>{INTERESTS[wordOrder]}</span>
+                        </h2>
+                        </div>
+                        <p className="text-left xl:text-[1.5rem] lg:text-[1.5rem] md:text-[1.5rem] text-[1rem] text-black opacity-50">
+                            Currently I am in Finland undergoing a tyokokeilu in <a href="https://www.linkedin.com/company/kyky-today/" target="_blank"  className="underline underline-offset-4">Kyky Today</a>, a Finnish Startup. At the same time, I am helping out a Danish Startup, <a href="https://www.linkedin.com/company/worthmore/" target="_blank"  className="underline underline-offset-4">Worthmore</a>, in their mission in making a big social impact in the world.
+                            Before that, I was doing an internship for a German Startup, Retink Media.
+                        </p>
+                        <p className="text-left xl:text-[1.5rem] lg:text-[1.5rem] md:text-[1.5rem] text-[1rem] text-black opacity-50">
+                            During my free time, I volunteer in various Finnish Organisations, learn new programming languages and making responsive web applications from <a href="https://www.frontendmentor.io/" target="_blank"  className="underline underline-offset-4">Frontend Mentor</a>. 
+                        </p>
+                    </div>
+                <div className="lg:basis-1/2 basis-none flex flex-col gap-10" >
+                {" "}
+                </div>
+            </div>
         </div>
       </div>
     </section>
