@@ -9,11 +9,17 @@ const skills = [
     },
     {
         "skill": "Back-end",
-        "technologies": [ "Node.js", "Java", "C#" ]
+        "technologies": [ "Node.js", "Java", "C#", "Python", "C", "C++" ]
     },
     {
         "skill": "Others",
-        "technologies": ["AWS", "Azure", "Firebase", "MongoDB", "PostgreSQL", "MySQL" ]
+        "technologies": [
+            "AWS", "Azure", "Firebase", 
+            "MongoDB", "PostgreSQL", "MySQL",
+            "Jest", "Playwright", "Cypress",
+            "Docker", "Kubernetes",
+            "Figma", "Canvas"
+        ]
     },
 ];
 
@@ -81,9 +87,13 @@ const Tech: React.FC = () => {
                 <div className="xl:text-[4rem] lg:text-[3rem] md:text-[2.5rem] text-[2rem]">
                     {data.skill}
                 </div>
-                <div className="flex flex-row">
+                <div className="grid grid-cols-12">
                     {
-                        data.technologies.map((tech, index) => <li>{tech}</li>)
+                        data.technologies.map((tech, index) => 
+                        <li className="col-span-3 
+                            xl:text-[1.5rem] lg:text-[1.5rem] md:text-[1.5rem] text-[1rem]">
+                            {tech}
+                        </li>)
                     }
                 </div>
             </div>
