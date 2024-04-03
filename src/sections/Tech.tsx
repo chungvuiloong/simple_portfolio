@@ -9,7 +9,7 @@ const skills = [
     },
     {
         "skill": "Back-end",
-        "technologies": [ "Node.js", "Java", "C#", "Python", "C", "C++" ]
+        "technologies": [ "Node.js", "Java", "C#", "Python", "C", "C++", "PHP", "Symfony" ]
     },
     {
         "skill": "Others",
