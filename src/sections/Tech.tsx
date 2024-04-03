@@ -4,15 +4,15 @@ import { computed, signal } from "@preact/signals";
 
 const skills = [
     {
-        "skill": "front-end",
+        "skill": "Front-end",
         "technologies": [ "React.js", "Next.js", "Astro.js", "Vue.js" ]
     },
     {
-        "skill": "back-end",
+        "skill": "Back-end",
         "technologies": [ "Node.js", "Java", "C#" ]
     },
     {
-        "skill": "others",
+        "skill": "Others",
         "technologies": ["AWS", "Azure", "Firebase", "MongoDB", "PostgreSQL", "MySQL" ]
     },
 ];
@@ -48,12 +48,12 @@ const PortfolioTab: React.FC<PortfolioTabProps> = ({
 };
 
 const Tech: React.FC = () => {
-    const [activeCategory, setActiveCategory] = useState<string>("front-end");
+    const [activeCategory, setActiveCategory] = useState<string>("Front-end");
 
     const categories = [
-      { id: "front-end", label: "front-end" },
-      { id: "back-end", label: "back-end" },
-      { id: "others", label: "others" },
+      { id: "Front-end", label: "Front-end" },
+      { id: "Back-end", label: "Back-end" },
+      { id: "Others", label: "Others" },
     ];
   
     const filteredSkill = skills.filter(
@@ -70,25 +70,23 @@ const Tech: React.FC = () => {
       style={{ backgroundColor: "#00dcda" }}
     >
       <div className="mx-auto container">
-        <div className="mb-10 flex lg:items-center xl:gap-10 md:gap-5 gap-3">
+        <div className="md:mb-10 mb-2 flex lg:items-center xl:gap-10 md:gap-5 gap-3">
             <h2  className="xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] break-words
             font-sans font-500 md:leading-[10rem] leading-[5rem] text-[#00224c] self-center tracking-tighter"
             >Skills</h2>
-          <div className="self-center">
-            <PortfolioTab
-              categories={categories}
-              onChangeCategory={handleCategoryChange}
-              activeCategory={activeCategory}
-            />
-          </div>
         </div>
-        <ul className="flex flex-row flex-wrap justify-center mx-auto gap-10">
-          {filteredSkill.map((data, index) => (
-            <>
-                {
-                    data.technologies.map((tech, index) => <li>{tech}</li>)
-                }
-            </>
+        <ul className="flex flex-col flex-wrap justify-center mx-auto gap-10">
+          {skills.map((data, index) => (
+            <div className="flex flex-col">
+                <div className="xl:text-[4rem] lg:text-[3rem] md:text-[2.5rem] text-[2rem]">
+                    {data.skill}
+                </div>
+                <div className="flex flex-row">
+                    {
+                        data.technologies.map((tech, index) => <li>{tech}</li>)
+                    }
+                </div>
+            </div>
           ))}
         </ul>
       </div>
