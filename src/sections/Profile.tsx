@@ -47,7 +47,7 @@ export default function Profile() {
                 Hi there!<br />
             </h1>
             <p className="mt-6 text-left md:text-4xl text-md text-black opacity-50">
-                I am "Jere" Vui Loong Chung. <br />A developer who is passionate about{""}<br />
+                I am "Jere" Vui Loong Chung. <br />A Full-stack developer who is passionate about{""}<br />
             </p>
             <h2 className="text-left md:text-8xl text-4xl text-[#00224c]">
                 <span className={fadeProp.fade}>{INTERESTS[wordOrder]}</span>
