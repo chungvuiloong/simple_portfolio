@@ -39,7 +39,7 @@ export default function Profile() {
   }, []);
 
   return (
-    <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-[#00dcda] h-svh`}>
+    <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-[#00dcda]`}>
       <div className="mx-auto container">
         <div className="flex flex-col justify-start">
             <h1 className="text-white mt-6 xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] tracking-tighter">
