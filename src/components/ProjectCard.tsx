@@ -34,7 +34,7 @@ type Project = {
                 <p className="font-extrabold text-slate-800">Built with:</p>
                 <div className="mt-1 flex flex-row flex-wrap gap-x-3 gap-y-1">
                 {technologiesUsed?.map((techno: string, index: number) => (
-                    <div key={index} className="text-slate-800">
+                    <div key={index} className="text-slate-500">
                     {techno}
                     </div>
                 ))}
