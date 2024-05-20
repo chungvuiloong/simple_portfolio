@@ -91,7 +91,7 @@ const Tech: React.FC = () => {
                     {
                         data.technologies.map((tech, index) => 
                         <li className="col-span-3 
-                            xl:text-[1.5rem] lg:text-[1.5rem] md:text-[1.5rem] text-[1rem]">
+                            xl:text-[1.5rem] lg:text-[1.5rem] md:text-[1.5rem] text-[1rem] text-black opacity-50">
                             {tech}
                         </li>)
                     }
