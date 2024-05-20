@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 const FADE_INTERVAL_MS = 1500;
 const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2;
 const INTERESTS = [
-    `Front-end development`,
+    `Fullstack development`,
 // `Back-end development`,
-//   `AI`,
+    `AI`,
 //   `UX / UI`,
 //   `Service Design`,
 //   `Front-end development`,
 //   `Back-end development`,
-  `Cloud engineering`,
+    `Cloud engineering`,
 ];
 
 type FadeProp = { fade: "fade-in" | "fade-out" };
