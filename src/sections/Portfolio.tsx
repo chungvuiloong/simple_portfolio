@@ -5,6 +5,23 @@ import { computed, signal } from "@preact/signals";
 const projects = [
   // Components
   {
+    title: "Transcript & Audio Player",
+    description: (
+        <>
+            This is my entry programming task from an AI notetaking company challenge. From a json file has been used to mapped out data of speakers. Text highlights according to the time of the text. And there's audio play that play, pause, rewind, forward and change in audio speed.
+        </>
+    ),
+    imageUrl: "project1.jpg",
+    host: "Vercel",
+    demoUrl: "https://mrjays-transcipt-component.vercel.app/",
+    githubUrl:
+      "https://github.com/chungvuiloong/transcript",
+    category: "components",
+    year: 2024,
+    status: "Completed",
+    technologiesUsed: ["Next.js", "React", "TailwindCSS"],
+  },
+  {
     title: "Product preview card",
     description: (
       <>
