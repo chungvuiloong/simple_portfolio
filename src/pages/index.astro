@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Portfolio from '@sections/Portfolio.tsx';
+import Work from '@sections/Work.tsx';
 import Profile from '@sections/Profile.tsx';
 import Contact from '@sections/Contact.tsx';
 import Tech from '@sections/Tech.tsx';
@@ -11,6 +12,7 @@ import Tech from '@sections/Tech.tsx';
 	<main>
         <Profile client:idle />
         <!-- <Tech /> -->
+        <Work />
         <Tech client:idle />
         <Portfolio client:idle />
         <Contact />
