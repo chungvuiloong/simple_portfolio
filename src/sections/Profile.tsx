@@ -62,7 +62,7 @@ export default function Profile() {
                         <p className="text-left xl:text-[1.5rem] lg:text-[1.5rem] md:text-[1.5rem] text-[1rem] text-black opacity-50">
                             During my free time, I volunteer in various Finnish Organisations, learn new programming languages and making responsive web applications from <a href="https://www.frontendmentor.io/" target="_blank"  className="underline underline-offset-4">Frontend Mentor</a>. 
                         </p>
-                        <a href="#portfolio" className="px-5 py-3 h-30 w-fit bg-white text-[#00224c] rounded-full
+                        <a href="#portfolio" className="px-8 py-3 h-30 w-fit bg-[#00224c] text-white rounded-full
                         xl:text-[1.5rem] lg:text-[1.5rem] md:text-[1.5rem] text-[1rem]">Check out my portfolio</a>
                     </div>
                 <div className="lg:basis-1/2 basis-none flex flex-col gap-10" >
