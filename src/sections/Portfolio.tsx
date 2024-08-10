@@ -529,8 +529,9 @@ const Portfolio: React.FC = () => {
 
   return (
     <section
-      className="py-24 sm:py-32 px-6 lg:px-10"
-      style={{ backgroundColor: "#00dcda" }}
+        id="portfolio"
+        className="py-24 sm:py-32 px-6 lg:px-10"
+        style={{ backgroundColor: "#00dcda" }}
     >
       <div className="mx-auto container">
         <div className="mb-10 flex lg:items-center xl:gap-10 md:gap-5 gap-3">
