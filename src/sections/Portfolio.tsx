@@ -429,8 +429,8 @@ const projects = [
   //   status: 'In progress',
   // },
   {
-    title: "Notepad",
-    description: "A fullstack notepad learned from Fullstack open at University of Helsinki",
+    title: "Phonebook - Fullstack",
+    description: "A fullstack phonebook to add, update and delete contacts.",
     imageUrl: "",
     host: "Vercel",
     demoUrl: "https://phonebookfullstac.onrender.com/",
@@ -440,6 +440,19 @@ const projects = [
     status: "In redesigning progress",
     technologiesUsed: ["React", "Render", "Node.js","TailwindCSS", "Javascript", "HTML"],
   },
+  {
+    title: "Notepad - Fullstack",
+    description: "A fullstack notepad learned from Fullstack open at University of Helsinki",
+    imageUrl: "",
+    host: "Vercel",
+    demoUrl: "https://notesfullstack-iszo.onrender.com",
+    githubUrl: "",
+    category: "personal",
+    year: 2024,
+    status: "In redesigning progress",
+    technologiesUsed: ["React", "Render", "Node.js","TailwindCSS", "Javascript", "HTML"],
+  },
+//   
   {
     title: "Simple Portfolio",
     description: "A simple portfolio to display all the work done.",
