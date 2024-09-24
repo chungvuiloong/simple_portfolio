@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { ProjectCard } from "@components/ProjectCard";
 import { computed, signal } from "@preact/signals";
 
+const nodejs = "Node.js"
+const express = "Express"
+const mongo = "MongoDB"
+
 const projects = [
   // Components
   {
@@ -361,7 +365,7 @@ const projects = [
     category: "web app",
     year: 2023,
     status: "Completed",
-    technologiesUsed: ["React.js", "Node.js", "Javascript", "HTML"],
+    technologiesUsed: ["React.js", nodejs, express, "Javascript", "HTML"],
   },
   {
     title: "BMI",
@@ -438,7 +442,7 @@ const projects = [
     category: "personal",
     year: 2024,
     status: "In redesigning progress",
-    technologiesUsed: ["React", "Render", "Node.js","TailwindCSS", "Javascript", "HTML"],
+    technologiesUsed: ["React", "Render", nodejs, express, mongo, "TailwindCSS", "Javascript", "HTML"],
   },
   {
     title: "Notepad - Fullstack",
@@ -450,7 +454,7 @@ const projects = [
     category: "personal",
     year: 2024,
     status: "In redesigning progress",
-    technologiesUsed: ["React", "Render", "Node.js","TailwindCSS", "Javascript", "HTML"],
+    technologiesUsed: ["React", "Render", nodejs , express, mongo, "TailwindCSS", "Javascript", "HTML"],
   },
 //   
   {
