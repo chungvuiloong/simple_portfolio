@@ -9,10 +9,41 @@ const mongo = "MongoDB"
 const projects = [
   // Components
   {
+    title: "Bento Grid Component", 
+    description: (
+        <>
+            This is a challenge from{" "}
+            <a
+            href="https://www.frontendmentor.io/"
+            className="underline underline-offset-4"
+            target="_blank"
+            >
+            Frontend Mentor
+            </a>
+            . Access the challenge from{" "}
+            <a
+            href="https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj"
+            className="underline underline-offset-4"
+            target="_blank"
+            >
+            here
+            </a>
+      </>
+    ),
+    imageUrl: "project1.jpg",
+    host: "Vercel",
+    demoUrl: "https://mrjays-bento-grid-component.vercel.app/",
+    githubUrl:
+      "https://github.com/chungvuiloong/bento-grid",
+    category: "components",
+    year: 2025,
+    status: "Completed",
+    technologiesUsed: ["Next.js", "React", "TailwindCSS"],
+  },
+  {
     title: "Transcript & Audio Player",
     description: (
         <>
-            This is my entry programming task from an AI notetaking company challenge. From a json file has been used to mapped out data of speakers. Text highlights according to the time of the text. And there's audio play that play, pause, rewind, forward and change in audio speed.
         </>
     ),
     imageUrl: "project1.jpg",
