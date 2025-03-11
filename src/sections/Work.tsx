@@ -2,6 +2,20 @@ import React from 'react';
 
 const work_experience = [
     {
+        company: "Emmy Clothing",
+        time: "October 2024 - Present",
+        duration: "ongoing",
+        title: "Fullstack Developer",
+        location: "Helsinki, Uusimaa, Finland · Remote",
+        tech_stack: ["Next.js", "React", "TypeScript", "Javascript", "Node.js", "TailwindCSS", "Figma", "GraphQL", "Apollo Client"],
+        responsibilities: [
+            "Developed and maintained full-stack web applications using a variety of technologies.",
+            "Redesigned UX/UI web pages and components via user research and trending designs.",
+            "Identified and resolved bugs in web pages to enhance functionality, optimize performance, and improve user experience, ensuring site stability and preventing crashes.",
+            "Prototyped wireframes of new sections, components, and web pages using Figma."
+          ]
+    },   
+    {
         company: "Strive for Startups",
         time: "May 2024 - Present",
         duration: "ongoing",
