@@ -377,7 +377,7 @@ const projects = [
     description: "This is the entry task for Liana Technologies.",
     imageUrl: "project1.jpg",
     host: "Vercel",
-    demoUrl: "https://mrjays-liana-landingpage.vercel.app/",
+    demoUrl: "https://mrjays-liana-technology-landing-page.vercel.app/",
     githubUrl: "https://github.com/chungvuiloong/landingpage_liana_tech",
     category: "web",
     year: 2022,
