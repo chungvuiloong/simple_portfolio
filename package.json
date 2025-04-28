@@ -16,6 +16,7 @@
     "@preact/signals": "^1.2.2",
     "astro": "^4.4.4",
     "astro-icon": "^1.1.0",
+    "graphql-request": "^7.1.2",
     "nanostores": "^0.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
