@@ -1,6 +1,23 @@
 import React, { useState } from "react";
 import { ProjectCard } from "@components/ProjectCard";
 import { computed, signal } from "@preact/signals";
+import { GraphQLClient } from "graphql-request";
+
+// const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
+
+// type Portfolio = {
+//   portfolios: {
+//     title: string;
+//   }[];
+// };
+
+// const { portfolios }: Portfolio = await client.request(`
+//     query Portfolios {
+//         portfolios {
+//             title
+//         }
+//     }
+// `);
 
 const nodejs = "Node.js"
 const express = "Express"
