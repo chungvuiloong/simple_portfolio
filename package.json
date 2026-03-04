@@ -13,7 +13,6 @@
     "@astrojs/check": "^0.5.5",
     "@astrojs/react": "^3.0.10",
     "@astrojs/tailwind": "^5.1.0",
-    "@preact/signals": "^1.2.2",
     "astro": "^4.4.4",
     "astro-icon": "^1.1.0",
     "nanostores": "^0.10.0",

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { ProjectCard } from "@components/ProjectCard";
-import { computed, signal } from "@preact/signals";
 
 const nodejs = "Node.js"
 const express = "Express"
