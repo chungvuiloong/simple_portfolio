@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { SectionContainer } from "@components/SectionContainer";
 
 /* ── Fonts & keyframes ───────────────────────────────────── */
@@ -70,7 +70,7 @@ const EXPERIENCES = [
     role: "Fullstack Developer",
     company: "Emmy Clothing",
     period: "Oct 2024 — Present",
-    tenure: "7 months",
+    tenure: "1 yr 5 mos",
     location: "Helsinki, Uusimaa, Finland · Remote",
     type: "Full-time",
     stack: ["Next.js","React","TypeScript","Javascript","Node.js","TailwindCSS","Figma","GraphQL","Apollo Client"],
@@ -86,7 +86,7 @@ const EXPERIENCES = [
     role: "UX/UI Frontend Developer",
     company: "Strive for Startups",
     period: "May 2024 — Present",
-    tenure: "10 months",
+    tenure: "1 yr 10 mos",
     location: "Helsinki, Uusimaa, Finland · Remote",
     type: "Contract",
     stack: ["Next.js","TypeScript","Javascript","Node.js","TailwindCSS"],
@@ -268,9 +268,6 @@ function DetailPanel({ exp }: any) {
 
           {/* Left: title block */}
           <div>
-            <div className="mb-3">
-              <Badge variant="default">{exp.type}</Badge>
-            </div>
             <h2 className="ff font-bold leading-tight mb-2"
                 style={{ fontSize: "clamp(24px, 4vw, 40px)", color: "#fff" }}>
               {exp.role}
@@ -326,11 +323,6 @@ export default function Work() {
   const [active, setActive] = useState(EXPERIENCES[0].id);
   const exp = EXPERIENCES.find(e => e.id === active);
 
-  const handleTabClick = (id: string) => {
-    console.log('Setting active to:', id);
-    setActive(id);
-  };
-
   return (
     <>
       <style>{STYLES}</style>
@@ -343,7 +335,7 @@ export default function Work() {
             <p className="fmono uppercase tracking-[0.25em] flex items-center gap-3 mb-3"
                style={{ fontSize: 10, color: "rgba(255,255,255,0.4)" }}>
               <span style={{ display: "inline-block", width: 24, height: 1, background: "rgba(255,255,255,0.4)" }} />
-              Work history
+              3+ years of experience
             </p>
 
             {/* Big title */}
