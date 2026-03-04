@@ -38,10 +38,10 @@ export function SectionHeader({
         )}
 
         {/* Title */}
-        <HeadingTag className="font-bold text-[clamp(48px,11vw,148px)] leading-[0.88] -tracking-[0.02em]">
+        <HeadingTag className={`font-bold text-[clamp(48px,11vw,148px)] leading-[0.88] -tracking-[0.02em] ${inLightBackground ? 'text-navy' : 'text-current'}`}>
           {accentPosition === "end" ? (
             <>
-              <span className="text-current">{title}</span>
+              {title}
               {titleAccent && (
                 <em className={`not-italic font-light ${inLightBackground ? 'text-navy' : 'text-cyan' } ${hasActions ? 'block' : ''}`}>{titleAccent}</em>
               )}
@@ -51,7 +51,7 @@ export function SectionHeader({
               {titleAccent && (
                 <em className={`not-italic font-light ${inLightBackground ? 'text-navy' : 'text-cyan' } ${hasActions ? 'block' : ''}`}>{titleAccent}</em>
               )}
-              <span className="text-current">{title}</span>
+              {title}
             </>
           )}
         </HeadingTag>
