@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { ProjectCard } from "@components/ProjectCard";
+import { SectionContainer } from "@components/SectionContainer";
+import { SectionTitle } from "@components/SectionTitle";
 
 const nodejs = "Node.js"
 const express = "Express"
@@ -575,23 +577,15 @@ const Portfolio: React.FC = () => {
     };  
 
   return (
-    <section
-        id="portfolio"
-        className="py-24 sm:py-32 px-6 lg:px-10"
-        style={{ backgroundColor: "#00dcda" }}
-    >
-      <div className="mx-auto container">
+    <SectionContainer id="portfolio">
         <div className="mb-10 flex lg:items-center xl:gap-10 md:gap-5 gap-3">
-          <h2
-            className="xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] break-words
-                        font-sans font-500 md:leading-[16rem] leading-[5rem] text-[#00224c] self-center tracking-tighter"
-          >
+          <SectionTitle>
             Po<span className="tracking-wider">rt</span>
             <span className="sm:hidden">
               <br />
             </span>
             folio
-          </h2>
+          </SectionTitle>
           <div className="self-center">
             <PortfolioTab
               categories={categories}
@@ -605,8 +599,7 @@ const Portfolio: React.FC = () => {
             <ProjectCard key={index} project={project} />
           ))}
         </ul>
-      </div>
-    </section>
+    </SectionContainer>
   );
 };
 

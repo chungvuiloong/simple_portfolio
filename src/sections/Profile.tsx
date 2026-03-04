@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import { useEffect, useState } from "react";
+import { SectionContainer } from "@components/SectionContainer";
+import { SectionTitle } from "@components/SectionTitle";
 
 const FADE_INTERVAL_MS = 1500;
 const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2;
@@ -39,8 +41,7 @@ export default function Profile() {
   }, []);
 
   return (
-    <section className={`py-24 sm:py-32 px-6 lg:px-10 bg-[#00dcda]`}>
-      <div className="mx-auto container">
+    <SectionContainer>
         <div className="flex flex-col justify-start">
             <h1 className="text-white mt-6 xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] tracking-tighter">
                 Hi there!<br />
@@ -70,7 +71,6 @@ export default function Profile() {
                 </div>
             </div>
         </div>
-      </div>
-    </section>
+    </SectionContainer>
   );
 }

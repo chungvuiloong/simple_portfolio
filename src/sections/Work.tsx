@@ -1,4 +1,6 @@
 import React from 'react';
+import { SectionContainer } from "@components/SectionContainer";
+import { SectionTitle } from "@components/SectionTitle";
 
 const work_experience = [
     {
@@ -142,16 +144,11 @@ const work_experience = [
 
 const Work: React.FC = () => {
     return (
-        <section
-          className="py-24 sm:py-32 px-6 lg:px-10"
-          style={{ backgroundColor: "#00dcda" }}
-        >
-          <div className="mx-auto container">
+        <SectionContainer>
             <div className="md:mb-10 mb-5 flex lg:items-center xl:gap-10 md:gap-5 gap-3">
-                <h2  className="xl:text-[16rem] lg:text-[13rem] md:text-[10rem] text-[5rem] break-all
-                font-sans font-500 md:leading-[15rem] leading-[5rem] text-[#00224c] self-center tracking-tighter"
-                >Expe<span className='tracking-normal'>ri</span>ence
-                </h2>
+                <SectionTitle className="break-all md:leading-[15rem]">
+                  Expe<span className='tracking-normal'>ri</span>ence
+                </SectionTitle>
             </div>
             <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
                 {work_experience.map( ({ location, tech_stack, time, title, company, responsibilities }) => 
@@ -188,8 +185,7 @@ const Work: React.FC = () => {
                 )}
 
             </ol>
-          </div>
-        </section>
+        </SectionContainer>
       );
 };
 
