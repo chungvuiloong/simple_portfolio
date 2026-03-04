@@ -72,7 +72,7 @@ function Card({ project, delay }: { project: Project; delay: number }) {
 
         {/* Body */}
         <div className="p-4 md:p-5 lg:p-6 flex flex-col flex-1 gap-2.5 md:gap-3">
-          <h2 className="font-light text-[clamp(16px,1.7vw,22px)] text-blue leading-[1.2]">
+          <h2 className="text-[clamp(16px,1.7vw,22px)] text-blue leading-[1.2]">
             {project.title}
           </h2>
 
@@ -130,7 +130,7 @@ export default function Portfolio() {
                     className={`font-dm text-[11px] md:text-[12px] px-3 md:px-4 py-1.5 md:py-2 rounded-full cursor-pointer border-0 transition-all duration-200 ${
                       activeFilter === f
                         ? 'bg-blue text-white'
-                        : 'bg-transparent text-navy/65 hover:bg-navy/10'
+                        : 'bg-transparent text-navy hover:bg-navy/10'
                     }`}
                   >
                     {f}
@@ -138,7 +138,7 @@ export default function Portfolio() {
                 ))}
               </nav>
 
-              <p className="font-mono text-[9px] md:text-[10px] tracking-[0.15em] uppercase text-navy/45">
+              <p className="font-mono text-[9px] md:text-[10px] tracking-[0.15em] uppercase text-navy/80">
                 {filteredProjects.length} projects
               </p>
             </div>

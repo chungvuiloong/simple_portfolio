@@ -176,7 +176,7 @@ export default function Work() {
           />
 
           {/* ── Divider ── */}
-          <div className="mb-10 sm:mb-12 h-px bg-cyan/10" />
+          <div className="mb-8 md:mb-12 lg:mb-14 mt-6 md:mt-8 h-px bg-cyan/10" />
 
           {/* ── Layout: sidebar + panel ── */}
           <div className="exp-layout flex gap-6 items-start">

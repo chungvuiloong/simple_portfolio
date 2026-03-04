@@ -29,8 +29,8 @@ export function SectionHeader({
       <div>
         {/* Eyebrow */}
         {eyebrow && (
-          <p className="font-mono text-[9px] md:text-[10px] tracking-[0.25em] uppercase flex items-center gap-2 md:gap-3 mb-2 md:mb-3 text-current opacity-60">
-            <span className={`block h-px ${hasActions ? 'w-4 md:w-6' : 'w-6'} bg-current opacity-60`} />
+          <p className="font-mono text-[9px] md:text-[10px] tracking-[0.25em] uppercase flex items-center gap-2 md:gap-3 mb-2 md:mb-3 text-current opacity-80">
+            <span className={`block h-px ${hasActions ? 'w-4 md:w-6' : 'w-6'} bg-current opacity-80`} />
             {eyebrow}
           </p>
         )}
