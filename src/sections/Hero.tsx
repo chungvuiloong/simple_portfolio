@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { SectionContainer } from "@components/SectionContainer";
 import Navbar from "@components/Navbar";
+import { Badge } from "@components/ui";
 import {
   HERO_DATA,
   TECH_STACK,
@@ -16,21 +17,6 @@ const MOBILE_STYLES = `
   }
 `;
 
-/* ── Stack pill ─────────────────────────────────────────── */
-function StackPill({ label }: { label: string }) {
-  const [h, setH] = useState(false);
-  return (
-    <span
-      onMouseEnter={() => setH(true)}
-      onMouseLeave={() => setH(false)}
-      className={`font-mono text-[9px] tracking-[0.12em] uppercase px-[11px] py-[5px] rounded-sm cursor-default transition-all duration-[180ms] ${
-        h ? 'bg-cyan text-blue' : 'bg-cyan/10 text-cyan'
-      }`}
-    >
-      {label}
-    </span>
-  );
-}
 
 /* ── Main export ─────────────────────────────────────────── */
 export default function Hero() {
@@ -85,7 +71,7 @@ export default function Hero() {
               {/* Stack pills */}
               <div className="flex flex-wrap gap-1.5 mb-8 animate-fade-up delay-[300ms]">
                 {TECH_STACK.map((s) => (
-                  <StackPill key={s} label={s} />
+                  <Badge key={s} variant="default">{s}</Badge>
                 ))}
               </div>
 
@@ -98,12 +84,7 @@ export default function Hero() {
                   </p>
                   <div className="flex flex-wrap gap-[5px]">
                     {TECH_STACK.slice(0, 4).map((s) => (
-                      <span
-                        key={s}
-                        className="font-mono text-[9px] tracking-[0.1em] uppercase px-[10px] py-1 rounded-sm bg-cyan/10 text-cyan"
-                      >
-                        {s}
-                      </span>
+                      <Badge key={s} variant="default">{s}</Badge>
                     ))}
                   </div>
                 </div>
