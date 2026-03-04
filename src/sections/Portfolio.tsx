@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SectionContainer } from "@components/SectionContainer";
+import { SectionHeader } from "@components/SectionHeader";
 import { PROJECTS, PORTFOLIO_FILTERS } from "@lib/data";
 import type { Project } from "@lib/data";
 
@@ -71,7 +72,7 @@ function Card({ project, delay }: { project: Project; delay: number }) {
 
         {/* Body */}
         <div className="p-4 md:p-5 lg:p-6 flex flex-col flex-1 gap-2.5 md:gap-3">
-          <h2 className="font-fraunces font-light text-[clamp(16px,1.7vw,22px)] text-blue leading-[1.2]">
+          <h2 className="font-light text-[clamp(16px,1.7vw,22px)] text-blue leading-[1.2]">
             {project.title}
           </h2>
 
@@ -112,49 +113,36 @@ export default function Portfolio() {
 
   return (
     <SectionContainer id="portfolio" backgroundColor="#00dcda">
-      <div className="font-dm">
-        {/* ── Header ── */}
-        <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-10 mb-4">
-          {/* Title block */}
-          <div>
-            {/* Eyebrow */}
-            <p className="font-mono text-[9px] md:text-[10px] tracking-[0.25em] uppercase flex items-center gap-2 md:gap-3 mb-2 md:mb-3 text-navy/60">
-              <span className="block h-px w-4 md:w-6 bg-navy/60" />
-              Selected work
-            </p>
+      <div className="font-dm text-navy">
+        <SectionHeader
+          eyebrow="Selected work"
+          title="Port"
+          titleAccent="folio."
+          accentPosition="end"
+          actions={
+            <div className="flex flex-col items-start md:items-end gap-3 md:gap-4 w-full md:w-auto md:self-end md:pb-1">
+              <nav className="flex flex-wrap gap-2 justify-start md:justify-end w-full">
+                {PORTFOLIO_FILTERS.map((f) => (
+                  <button
+                    key={f}
+                    onClick={() => setActiveFilter(f)}
+                    className={`font-dm text-[11px] md:text-[12px] px-3 md:px-4 py-1.5 md:py-2 rounded-full cursor-pointer border-0 transition-all duration-200 ${
+                      activeFilter === f
+                        ? 'bg-blue text-white'
+                        : 'bg-transparent text-navy/65 hover:bg-navy/10'
+                    }`}
+                  >
+                    {f}
+                  </button>
+                ))}
+              </nav>
 
-            {/* Wordmark */}
-            <h1 className="font-fraunces font-bold -tracking-[0.02em] leading-[0.88] text-[clamp(48px,12vw,152px)]">
-              <span className="text-blue">Port</span>
-              <em className="not-italic font-light block text-navy">
-                folio.
-              </em>
-            </h1>
-          </div>
-
-          {/* Filter + count */}
-          <div className="flex flex-col items-start md:items-end gap-3 md:gap-4 w-full md:w-auto md:self-end md:pb-1">
-            <nav className="flex flex-wrap gap-2 justify-start md:justify-end w-full">
-              {PORTFOLIO_FILTERS.map((f) => (
-                <button
-                  key={f}
-                  onClick={() => setActiveFilter(f)}
-                  className={`font-dm text-[11px] md:text-[12px] px-3 md:px-4 py-1.5 md:py-2 rounded-full cursor-pointer border-0 transition-all duration-200 ${
-                    activeFilter === f
-                      ? 'bg-blue text-white'
-                      : 'bg-transparent text-navy/65 hover:bg-navy/10'
-                  }`}
-                >
-                  {f}
-                </button>
-              ))}
-            </nav>
-
-            <p className="font-mono text-[9px] md:text-[10px] tracking-[0.15em] uppercase text-navy/45">
-              {filteredProjects.length} projects
-            </p>
-          </div>
-        </header>
+              <p className="font-mono text-[9px] md:text-[10px] tracking-[0.15em] uppercase text-navy/45">
+                {filteredProjects.length} projects
+              </p>
+            </div>
+          }
+        />
 
         {/* ── Divider ── */}
         <div className="mb-8 md:mb-12 lg:mb-14 mt-6 md:mt-8 h-px bg-navy/15" />

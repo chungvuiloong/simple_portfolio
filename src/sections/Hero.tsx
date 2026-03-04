@@ -60,12 +60,12 @@ export default function Hero() {
               </p>
 
               {/* Greeting */}
-              <h1 className="font-fraunces text-[clamp(52px,8vw,100px)] font-thin leading-[0.92] -tracking-[0.025em] text-white mb-0 animate-fade-up delay-[140ms]">
+              <h1 className="text-[clamp(52px,8vw,100px)] font-thin leading-[0.92] -tracking-[0.025em] text-white mb-0 animate-fade-up delay-[140ms]">
                 Hi there,
               </h1>
 
               {/* Name */}
-              <h1 className="font-fraunces text-[clamp(52px,8vw,100px)] font-bold leading-[0.92] -tracking-[0.025em] text-cyan mb-5 animate-fade-up delay-[220ms]">
+              <h1 className="text-[clamp(52px,8vw,100px)] font-bold leading-[0.92] -tracking-[0.025em] text-cyan mb-5 animate-fade-up delay-[220ms]">
                 I'm {HERO_DATA.name.first}.
                 <span
                   aria-hidden="true"

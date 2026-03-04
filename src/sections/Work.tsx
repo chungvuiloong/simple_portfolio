@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SectionContainer } from "@components/SectionContainer";
+import { SectionHeader } from "@components/SectionHeader";
 import { EXPERIENCES } from "@lib/data";
 import type { Experience } from "@lib/data";
 import { Badge, Label, Dot } from "@components/ui";
@@ -106,7 +107,7 @@ function DetailPanel({ exp }: { exp: Experience }) {
         <div className="flex flex-wrap justify-between gap-4 items-start">
           {/* Left: title block */}
           <div>
-            <h2 className="font-fraunces font-bold leading-tight mb-2 text-white text-[clamp(24px,4vw,40px)]">
+            <h2 className="font-bold leading-tight mb-2 text-white text-[clamp(24px,4vw,40px)]">
               {exp.role}
             </h2>
             <p className="font-fraunces font-light text-cyan text-[clamp(18px,2.5vw,24px)]">
@@ -165,21 +166,14 @@ export default function Work() {
       <style>{STYLES}</style>
 
       <SectionContainer id="work" backgroundColor="#0d2a3a">
-        <div className="font-dm">
-          {/* ── Section header ── */}
-          <header className="mb-10 sm:mb-14">
-            {/* Eyebrow */}
-            <p className="font-mono text-[10px] tracking-[0.25em] uppercase flex items-center gap-3 mb-3 text-white/40">
-              <span className="inline-block w-6 h-px bg-white/40" />
-              3+ years of experience
-            </p>
-
-            {/* Big title */}
-            <h1 className="font-fraunces font-bold text-[clamp(48px,11vw,148px)] leading-[0.88] -tracking-[0.02em]">
-              <span className="text-white">Exper</span>
-              <em className="font-fraunces not-italic font-light text-cyan">ience.</em>
-            </h1>
-          </header>
+        <div className="font-dm text-white">
+          <SectionHeader
+            as="h2"
+            eyebrow="3+ years of experience"
+            title="Exper"
+            titleAccent="ience."
+            accentPosition="end"
+          />
 
           {/* ── Divider ── */}
           <div className="mb-10 sm:mb-12 h-px bg-cyan/10" />
