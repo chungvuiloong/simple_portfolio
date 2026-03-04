@@ -115,6 +115,7 @@ export default function Portfolio() {
     <SectionContainer id="portfolio" backgroundColor="#00dcda">
       <div className="font-dm text-navy">
         <SectionHeader
+            as="h2"
           eyebrow="Selected work"
           title="Port"
           titleAccent="folio."
