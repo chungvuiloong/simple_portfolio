@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '@sections/Hero.tsx';
 import Portfolio from '@sections/Portfolio.tsx';
 import Work from '@sections/Work.tsx';
 import Profile from '@sections/Profile.tsx';
@@ -10,7 +11,8 @@ import Tech from '@sections/Tech.tsx';
 
 <Layout title="MrJay's Simple Portfolio">
 	<main>
-        <Profile client:idle />
+        <Hero client:idle />
+        <!-- <Profile client:idle /> -->
         <Portfolio client:idle />
         <!-- <Tech /> -->
         <Work client:idle />

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { SectionContainer } from "@components/SectionContainer";
+import { EXPERIENCES } from "@lib/data";
+import type { Experience } from "@lib/data";
 
 /* ── Fonts & keyframes ───────────────────────────────────── */
 const STYLES = `
@@ -63,90 +65,6 @@ const C = {
   creamborder: "#e8e4dc",
 };
 
-/* ── Data ────────────────────────────────────────────────── */
-const EXPERIENCES = [
-  {
-    id: "01",
-    role: "Fullstack Developer",
-    company: "Emmy Clothing",
-    period: "Oct 2024 — Present",
-    tenure: "1 yr 5 mos",
-    location: "Helsinki, Uusimaa, Finland · Remote",
-    type: "Full-time",
-    stack: ["Next.js","React","TypeScript","Javascript","Node.js","TailwindCSS","Figma","GraphQL","Apollo Client"],
-    responsibilities: [
-      "Developed and maintained full-stack web applications using a variety of modern technologies.",
-      "Redesigned UX/UI web pages and components via user research and trending design patterns.",
-      "Identified and resolved bugs to enhance functionality, optimize performance, and improve UX.",
-      "Prototyped wireframes of new sections, components, and web pages using Figma.",
-    ],
-  },
-  {
-    id: "02",
-    role: "UX/UI Frontend Developer",
-    company: "Strive for Startups",
-    period: "May 2024 — Present",
-    tenure: "1 yr 10 mos",
-    location: "Helsinki, Uusimaa, Finland · Remote",
-    type: "Contract",
-    stack: ["Next.js","TypeScript","Javascript","Node.js","TailwindCSS"],
-    responsibilities: [
-      "Collaborated with marketing and branding teams to enhance landing and dashboard pages.",
-      "Built reusable, maintainable components from Figma designs using Tailwind and Next.js.",
-      "Improved performance metrics and accessibility scores across core user flows.",
-    ],
-  },
-  {
-    id: "03",
-    role: "Fullstack Developer",
-    company: "Kyky Today",
-    period: "Feb 2024 — May 2024",
-    tenure: "4 months",
-    location: "Helsinki, Uusimaa, Finland · Hybrid",
-    type: "Full-time",
-    stack: ["React.js","SASS","Bootstrap","Firebase","Node.js"],
-    responsibilities: [
-      "Developed and maintained dynamic web pages, ensuring optimal performance and responsiveness.",
-      "Took initiative in redesigning the registration page with transparent and interactive error handling.",
-      "Researched and utilized Yup schema for error handling.",
-      "Used CSS architecture to restructure and refactor code into smaller, modular components.",
-    ],
-  },
-  {
-    id: "04",
-    role: "Frontend Developer",
-    company: "Worthmore",
-    period: "Jul 2023 — Feb 2024",
-    tenure: "8 months",
-    location: "København, Capital Region, Denmark · Remote",
-    type: "Full-time",
-    stack: ["React.js","Next.js","TypeScript","Tailwind CSS","JavaScript","Node.js"],
-    responsibilities: [
-      "Built reusable, maintainable components from Figma designs using Tailwind, TypeScript, and Next.js.",
-      "Reviewed and prepared code to be pushed from development to production with the CTO.",
-      "Contributed to design system development, maintaining UI/UX standards and guidelines.",
-      "Conducted user research and translated findings into user personas and design requirements.",
-      "Assisted in transitioning to new components and UI (shadcn/ui).",
-    ],
-  },
-  {
-    id: "05",
-    role: "Fullstack Developer",
-    company: "Retink Media",
-    period: "Feb 2023 — Aug 2023",
-    tenure: "7 months",
-    location: "Bonn, North Rhine-Westphalia, Germany · Remote",
-    type: "Full-time",
-    stack: ["Next.js","React.js","Node.js","Zustand","Moment.js","Redux"],
-    responsibilities: [
-      "Contributed to building the company's PaaS by creating key components including calendar, reminder, and form functionalities.",
-      "Developed custom components to accurately replicate Figma designs, ensuring precise visual alignment.",
-      "Conducted thorough debugging and refactoring to improve performance and maintainability.",
-      "Created reusable components that streamlined design implementation and enhanced code reusability.",
-    ],
-  },
-];
-
 /* ── Atoms ───────────────────────────────────────────────── */
 
 function Badge({ children, variant = "default" }: { children: React.ReactNode; variant?: string }) {
@@ -181,7 +99,7 @@ function Label({ children, muted = false }: { children: React.ReactNode; muted?:
 
 /* ── Tab button (sidebar on desktop, pill on mobile) ─────── */
 interface TabBtnProps {
-  exp: any;
+  exp: Experience;
   isActive: boolean;
   onClick: () => void;
   index: number;
@@ -255,7 +173,7 @@ function TabBtn({ exp, isActive, onClick, index }: TabBtnProps) {
 }
 
 /* ── Detail panel ────────────────────────────────────────── */
-function DetailPanel({ exp }: any) {
+function DetailPanel({ exp }: { exp: Experience }) {
   return (
     <div key={exp.id} className="anim-panel flex flex-col h-full"
          style={{ background: "rgba(255,255,255,0.03)",
