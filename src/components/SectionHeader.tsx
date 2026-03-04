@@ -8,18 +8,20 @@ interface SectionHeaderProps {
   title: string;
   titleAccent?: string;
   accentPosition?: "start" | "end";
+  inLightBackground?: boolean;
   actions?: React.ReactNode;
   className?: string;
 }
 
 export function SectionHeader({
-  eyebrow,
-  as: HeadingTag = "h1",
-  title,
-  titleAccent,
-  accentPosition = "end",
-  actions,
-  className = ""
+    eyebrow,
+    as: HeadingTag = "h1",
+    title,
+    titleAccent,
+    accentPosition = "end",
+    inLightBackground = false,
+    actions,
+    className = ""
 }: SectionHeaderProps) {
   const hasActions = !!actions;
 
@@ -41,13 +43,13 @@ export function SectionHeader({
             <>
               <span className="text-current">{title}</span>
               {titleAccent && (
-                <em className={`not-italic font-light text-cyan ${hasActions ? 'block' : ''}`}>{titleAccent}</em>
+                <em className={`not-italic font-light ${inLightBackground ? 'text-navy' : 'text-cyan' } ${hasActions ? 'block' : ''}`}>{titleAccent}</em>
               )}
             </>
           ) : (
             <>
               {titleAccent && (
-                <em className={`not-italic font-light text-cyan ${hasActions ? 'block' : ''}`}>{titleAccent}</em>
+                <em className={`not-italic font-light ${inLightBackground ? 'text-navy' : 'text-cyan' } ${hasActions ? 'block' : ''}`}>{titleAccent}</em>
               )}
               <span className="text-current">{title}</span>
             </>

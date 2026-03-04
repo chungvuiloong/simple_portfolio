@@ -115,11 +115,12 @@ export default function Portfolio() {
     <SectionContainer id="portfolio" backgroundColor="#00dcda">
       <div className="font-dm text-navy">
         <SectionHeader
-            as="h2"
+          as="h2"
           eyebrow="Selected work"
           title="Port"
           titleAccent="folio."
           accentPosition="end"
+          inLightBackground
           actions={
             <div className="flex flex-col items-start md:items-end gap-3 md:gap-4 w-full md:w-auto md:self-end md:pb-1">
               <nav className="flex flex-wrap gap-2 justify-start md:justify-end w-full">
