@@ -108,7 +108,9 @@ export default function Portfolio() {
       "Components": "components",
       "Personal Projects": "personal",
     };
-    return p.category === filterMap[activeFilter];
+    const mappedCategory = filterMap[activeFilter];
+    console.log('Active filter:', activeFilter, 'Mapped to:', mappedCategory, 'Project category:', p.category);
+    return p.category === mappedCategory;
   });
 
   return (
