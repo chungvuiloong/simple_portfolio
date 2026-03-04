@@ -2,33 +2,10 @@ import React, { useState } from "react";
 import { SectionContainer } from "@components/SectionContainer";
 import { EXPERIENCES } from "@lib/data";
 import type { Experience } from "@lib/data";
+import { Badge, Label, Dot } from "@components/ui";
 
-/* ── Fonts & keyframes ───────────────────────────────────── */
+/* ── Mobile responsive styles ──────────────────────────── */
 const STYLES = `
-  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,300;0,9..144,700;1,9..144,100;1,9..144,300;1,9..144,700&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap');
-
-  .ff  { font-family: 'Fraunces', serif; }
-  .fdm { font-family: 'DM Sans', sans-serif; }
-  .fmono { font-family: 'Space Mono', monospace; }
-
-  @keyframes fadeSlideIn {
-    from { opacity: 0; transform: translateY(14px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  .anim-panel  { animation: fadeSlideIn 0.4s cubic-bezier(.25,.46,.45,.94) both; }
-  .anim-fadein { animation: fadeIn 0.35s ease both; }
-  .anim-up     { animation: fadeUp 0.5s cubic-bezier(.25,.46,.45,.94) both; }
-  .d1{animation-delay:.04s}.d2{animation-delay:.12s}.d3{animation-delay:.20s}.d4{animation-delay:.28s}.d5{animation-delay:.36s}
-
   @media (max-width: 768px) {
     .exp-layout { flex-direction: column !important; }
     .exp-sidebar { width: 100% !important; flex-direction: column !important; gap: 0 !important; }
@@ -56,48 +33,7 @@ const STYLES = `
   }
 `;
 
-/* ── Palette ─────────────────────────────────────────────── */
-const C = {
-  cyan:  "#00D8D6",
-  navy:  "#0d2a3a",
-  blue:  "#00224C",
-  cream: "#f5f2ed",
-  creamborder: "#e8e4dc",
-};
-
-/* ── Atoms ───────────────────────────────────────────────── */
-
-function Badge({ children, variant = "default" }: { children: React.ReactNode; variant?: string }) {
-  const styles: Record<string, React.CSSProperties> = {
-    default: { background: C.blue, color: C.cyan },
-    tenure:  { background: "rgba(0,216,214,0.12)", color: C.cyan },
-    stack:   { background: C.creamborder, color: C.navy },
-    stackDark: { background: "rgba(0,34,76,0.55)", color: C.cyan },
-  };
-  return (
-    <span className="fmono inline-block"
-          style={{ ...styles[variant], fontSize: 9, letterSpacing: "0.14em",
-                   textTransform: "uppercase", padding: "3px 9px", borderRadius: 2 }}>
-      {children}
-    </span>
-  );
-}
-
-function Dot() {
-  return <span className="flex-shrink-0 rounded-full mt-[7px]"
-               style={{ width: 5, height: 5, background: C.cyan }} />;
-}
-
-function Label({ children, muted = false }: { children: React.ReactNode; muted?: boolean }) {
-  return (
-    <p className="fmono uppercase tracking-[0.22em]"
-       style={{ fontSize: 9, color: muted ? "rgba(0,216,214,0.5)" : C.cyan }}>
-      {children}
-    </p>
-  );
-}
-
-/* ── Tab button (sidebar on desktop, pill on mobile) ─────── */
+/* ── Tab button ──────────────────────────────────────────── */
 interface TabBtnProps {
   exp: Experience;
   isActive: boolean;
@@ -111,60 +47,46 @@ function TabBtn({ exp, isActive, onClick, index }: TabBtnProps) {
     onClick();
   };
 
+  const delays = ["delay-[40ms]", "delay-[120ms]", "delay-[200ms]", "delay-[280ms]", "delay-[360ms]"];
+
   return (
     <div
       onClick={handleClick}
-      className={`exp-tab anim-up d${index + 1}`}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleClick(); }}
       role="button"
       tabIndex={0}
-      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleClick(); }}
-      style={{
-        background:   isActive ? "rgba(0,216,214,0.07)" : "transparent",
-        borderLeft:   `3px solid ${isActive ? C.cyan : "rgba(0,216,214,0.15)"}`,
-        borderBottom: isActive ? `2px solid ${C.cyan}` : "2px solid transparent",
-        padding:      "16px 20px",
-        flexShrink:   0,
-        width: "100%",
-        cursor: "pointer",
-        transition: "all 0.2s",
-        userSelect: "none",
-        position: "relative",
-        zIndex: 10,
-      }}
+      className={`
+        exp-tab animate-fade-up ${delays[index]}
+        w-full p-4 sm:px-5 shrink-0 cursor-pointer select-none relative z-10
+        transition-all duration-200
+        ${isActive
+          ? 'bg-cyan/5 border-l-[3px] border-l-cyan border-b-2 border-b-cyan'
+          : 'bg-transparent border-l-[3px] border-l-cyan/15 border-b-2 border-b-transparent'}
+      `}
     >
-      <p className="fmono" style={{
-        fontSize: 9,
-        letterSpacing: "0.14em",
-        color: isActive ? C.cyan : "rgba(0,216,214,0.4)",
-        textTransform: "uppercase",
-        margin: "0 0 4px 0",
-      }}>
+      <p className={`
+        font-mono text-[9px] tracking-[0.14em] uppercase mb-1
+        transition-colors
+        ${isActive ? 'text-cyan' : 'text-cyan/40'}
+      `}>
         {exp.id}
       </p>
-      <p className="ff" style={{
-        fontSize: 15,
-        fontWeight: "bold",
-        lineHeight: 1.2,
-        color: isActive ? "#fff" : "rgba(255,255,255,0.45)",
-        margin: "0 0 2px 0",
-      }}>
+      <p className={`
+        font-fraunces text-[15px] font-bold leading-tight mb-0.5
+        transition-colors
+        ${isActive ? 'text-white' : 'text-white/45'}
+      `}>
         {exp.role}
       </p>
-      <p className="fdm" style={{
-        fontSize: 12,
-        color: isActive ? C.cyan : "rgba(0,216,214,0.3)",
-        margin: 0,
-      }}>
+      <p className={`
+        font-dm text-[12px]
+        transition-colors
+        ${isActive ? 'text-cyan' : 'text-cyan/30'}
+      `}>
         {exp.company}
       </p>
       {isActive && (
-        <p className="fmono" style={{
-          fontSize: 9,
-          letterSpacing: "0.12em",
-          color: "rgba(0,216,214,0.5)",
-          textTransform: "uppercase",
-          margin: "8px 0 0 0",
-        }}>
+        <p className="font-mono text-[9px] tracking-[0.12em] uppercase text-cyan/50 mt-2">
           {exp.period}
         </p>
       )}
@@ -175,33 +97,30 @@ function TabBtn({ exp, isActive, onClick, index }: TabBtnProps) {
 /* ── Detail panel ────────────────────────────────────────── */
 function DetailPanel({ exp }: { exp: Experience }) {
   return (
-    <div key={exp.id} className="anim-panel flex flex-col h-full"
-         style={{ background: "rgba(255,255,255,0.03)",
-                  border: "1px solid rgba(0,216,214,0.1)" }}>
-
+    <div
+      key={exp.id}
+      className="animate-fade-slide-in flex flex-col h-full bg-white/5 border border-cyan/10"
+    >
       {/* ── Role header ── */}
-      <div className="p-6 sm:p-8 md:p-10"
-           style={{ borderBottom: "1px solid rgba(0,216,214,0.1)" }}>
+      <div className="p-6 sm:p-8 md:p-10 border-b border-cyan/10">
         <div className="flex flex-wrap justify-between gap-4 items-start">
-
           {/* Left: title block */}
           <div>
-            <h2 className="ff font-bold leading-tight mb-2"
-                style={{ fontSize: "clamp(24px, 4vw, 40px)", color: "#fff" }}>
+            <h2 className="font-fraunces font-bold leading-tight mb-2 text-white text-[clamp(24px,4vw,40px)]">
               {exp.role}
             </h2>
-            <p className="ff font-light" style={{ fontSize: "clamp(18px, 2.5vw, 24px)", color: C.cyan }}>
+            <p className="font-fraunces font-light text-cyan text-[clamp(18px,2.5vw,24px)]">
               {exp.company}
             </p>
           </div>
 
           {/* Right: meta */}
           <div className="flex flex-col items-start sm:items-end gap-2 mt-1">
-            <p className="fmono uppercase tracking-widest" style={{ fontSize: 10, color: "rgba(255,255,255,0.5)" }}>
+            <p className="font-mono text-[10px] tracking-widest uppercase text-white/50">
               {exp.period}
             </p>
             <Badge variant="tenure">{exp.tenure}</Badge>
-            <p className="fdm" style={{ fontSize: 11, color: "rgba(255,255,255,0.38)" }}>
+            <p className="font-dm text-[11px] text-white/40">
               {exp.location}
             </p>
           </div>
@@ -209,23 +128,23 @@ function DetailPanel({ exp }: { exp: Experience }) {
       </div>
 
       {/* ── Stack ── */}
-      <div className="p-6 sm:p-8 md:p-10"
-           style={{ borderBottom: "1px solid rgba(0,216,214,0.1)" }}>
+      <div className="p-6 sm:p-8 md:p-10 border-b border-cyan/10">
         <Label muted>Tech Stack</Label>
         <div className="flex flex-wrap gap-1.5 mt-3">
-          {exp.stack.map((s: string) => <Badge key={s} variant="stackDark">{s}</Badge>)}
+          {exp.stack.map((s) => (
+            <Badge key={s} variant="stackDark">{s}</Badge>
+          ))}
         </div>
       </div>
 
       {/* ── Responsibilities ── */}
       <div className="p-6 sm:p-8 md:p-10 flex-1">
         <Label muted>Responsibilities</Label>
-        <ul className="mt-4 grid gap-3"
-            style={{ gridTemplateColumns: "repeat(1, 1fr)" }}>
-          {exp.responsibilities.map((r: string, ri: number) => (
+        <ul className="mt-4 grid gap-3">
+          {exp.responsibilities.map((r, ri) => (
             <li key={ri} className="flex gap-3 items-start">
               <Dot />
-              <span className="fdm leading-relaxed" style={{ fontSize: 13, color: "rgba(255,255,255,0.72)" }}>
+              <span className="font-dm text-[13px] leading-relaxed text-white/70">
                 {r}
               </span>
             </li>
@@ -245,41 +164,32 @@ export default function Work() {
     <>
       <style>{STYLES}</style>
 
-      <SectionContainer id="work" backgroundColor={C.navy}>
-        <div className="fdm">
+      <SectionContainer id="work" backgroundColor="#0d2a3a">
+        <div className="font-dm">
           {/* ── Section header ── */}
           <header className="mb-10 sm:mb-14">
             {/* Eyebrow */}
-            <p className="fmono uppercase tracking-[0.25em] flex items-center gap-3 mb-3"
-               style={{ fontSize: 10, color: "rgba(255,255,255,0.4)" }}>
-              <span style={{ display: "inline-block", width: 24, height: 1, background: "rgba(255,255,255,0.4)" }} />
+            <p className="font-mono text-[10px] tracking-[0.25em] uppercase flex items-center gap-3 mb-3 text-white/40">
+              <span className="inline-block w-6 h-px bg-white/40" />
               3+ years of experience
             </p>
 
             {/* Big title */}
-            <h1 className="ff font-bold tracking-tight"
-                style={{ fontSize: "clamp(48px, 11vw, 148px)", lineHeight: 0.88,
-                         letterSpacing: "-0.02em" }}>
-              <span style={{ color: "#fff" }}>Exper</span>
-              <em className="ff" style={{ fontStyle: "normal", fontWeight: 100, color: C.cyan }}>ience.</em>
+            <h1 className="font-fraunces font-bold text-[clamp(48px,11vw,148px)] leading-[0.88] -tracking-[0.02em]">
+              <span className="text-white">Exper</span>
+              <em className="font-fraunces not-italic font-light text-cyan">ience.</em>
             </h1>
           </header>
 
           {/* ── Divider ── */}
-          <div className="mb-10 sm:mb-12" style={{ height: 1, background: "rgba(0,216,214,0.12)" }} />
+          <div className="mb-10 sm:mb-12 h-px bg-cyan/10" />
 
-          {/* ══════════════════════════════════════════
-              DESKTOP: sidebar + panel side by side
-              MOBILE:  horizontal tab strip + panel stacked
-          ══════════════════════════════════════════ */}
-
-          {/* Always side-by-side: sidebar left, panel right */}
-          <div className="exp-layout" style={{ display: "flex", gap: 24, alignItems: "flex-start" }}>
-
+          {/* ── Layout: sidebar + panel ── */}
+          <div className="exp-layout flex gap-6 items-start">
             {/* ── Sidebar ── */}
-            <aside className="exp-sidebar" style={{ width: 240, flexShrink: 0, display: "flex", flexDirection: "column", gap: 8 }}>
+            <aside className="exp-sidebar w-60 shrink-0 flex flex-col gap-2">
               <Label muted>Positions</Label>
-              <div className="exp-sidebar-inner" style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 12 }}>
+              <div className="exp-sidebar-inner flex flex-col gap-2 mt-3">
                 {EXPERIENCES.map((e, i) => (
                   <TabBtn
                     key={e.id}
@@ -292,19 +202,20 @@ export default function Work() {
               </div>
 
               {/* Decorative timeline connector */}
-              <div className="exp-connector" style={{ marginTop: 24, marginLeft: 20, paddingLeft: 20,
-                            borderLeft: "2px solid rgba(0,216,214,0.12)" }}>
-                <p className="fmono uppercase" style={{ fontSize: 9, letterSpacing: "0.14em",
-                                                         color: "rgba(0,216,214,0.3)", marginBottom: 4 }}>Since</p>
-                <p className="fmono" style={{ fontSize: 9, color: "rgba(255,255,255,0.3)" }}>Feb 2023</p>
+              <div className="exp-connector mt-6 ml-5 pl-5 border-l-2 border-cyan/10">
+                <p className="font-mono text-[9px] tracking-[0.14em] uppercase text-cyan/30 mb-1">
+                  Since
+                </p>
+                <p className="font-mono text-[9px] text-white/30">
+                  Feb 2023
+                </p>
               </div>
             </aside>
 
             {/* ── Detail panel ── */}
-            <div style={{ flex: 1, minWidth: 0 }}>
+            <div className="flex-1 min-w-0">
               {exp && <DetailPanel exp={exp} />}
             </div>
-
           </div>
         </div>
       </SectionContainer>
